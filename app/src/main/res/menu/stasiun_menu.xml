@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_back"
+            android:title="@string/back" />
+    </group>
+
+    <item android:title="@string/cilacap_selatan">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_stacil"
+                    android:title="@string/staciltitle"
+                    android:icon="@drawable/train" />
+            </group>
+        </menu>
+    </item>
+    <item android:title="@string/kesugihan">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_stakesugihan"
+                    android:title="@string/stakesugihantitle"
+                    android:icon="@drawable/train" />
+
+                <item
+                    android:id="@+id/nav_stakarang"
+                    android:title="@string/stakarangtitle"
+                    android:icon="@drawable/train" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="@string/kroya">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_stakroya"
+                    android:title="@string/stakroyatitle"
+                    android:icon="@drawable/train" />
+
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Maos">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_stamaos"
+                    android:title="@string/stamaostitle"
+                    android:icon="@drawable/train" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="@string/gumilir">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_stagumilir"
+                    android:title="@string/stagumilirtitle"
+                    android:icon="@drawable/train" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Jeruklegi">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_stajeruk"
+                    android:title="@string/stajeruktitle"
+                    android:icon="@drawable/train" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Kawunganten">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_stakawu"
+                    android:title="@string/stakawutitle"
+                    android:icon="@drawable/train" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Gandrungmangun">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_stagandrung"
+                    android:title="@string/stagandrungtitle"
+                    android:icon="@drawable/train" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Sidareja">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_stasidareja"
+                    android:title="@string/stasidarejatitle"
+                    android:icon="@drawable/train" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Cipari">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_stacipari"
+                    android:title="@string/staciparititle"
+                    android:icon="@drawable/train" />
+            </group>
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,371 @@
+<resources>
+    <string name="app_name">Cilacap Integrated Tourism</string>
+    <string name="app_name_des">Eksplorasi Cagar Budaya di Kabupaten Cilacap Menggunakan Konsep Integrated Tourism</string>
+    <string name="peta_cilacap">Wisata Terpadu Cilacap</string>
+    <string name="prodi">Pendidikan Sejarah</string>
+    <string name="kampus">Universitas Muhammadiyah PROF. DR. HAMKA</string>
+    <string name="lang">Ganti Bahasa?</string>
+    <string name="bahasa">Bahasa</string>
+    <string name="opsi">Opsi</string>
+    <string name="versi">Version 1.10.15</string>
+    <string name="setting">Pengaturan</string>
+    <string name="back">Kembali</string>
+    <string name="expand">Baca Selengkapnya</string>
+    <string name="web"><![CDATA[<hr /><u>http://www.uhamka.ac.id/</u>]]></string>
+
+    <string name="next">Selanjutnya</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="tips_not_wifi">Anda menggunakan kuota data untuk memutar video, lanjutkan?</string>
+    <string name="tips_not_wifi_cancel">Kembali</string>
+    <string name="tips_not_wifi_confirm">Lanjutkan</string>
+
+    <string name="action_settings">Bahasa</string>
+    <string name="aplikasi">Tentang Aplikasi</string>
+    <string name="cilacap">Profil Cilacap</string>
+    <string name="doubleback">Tap sekali lagi untuk keluar</string>
+
+    <string name="other">Lain-lain</string>
+    <string name="stasiun">Stasiun</string>
+    <string name="jambu">Situs Candi Jambu</string>
+
+    <string name="toastawal">Pastikan aplikasi Google Maps terpasang!</string>
+
+    <string name="about">Tentang Kami</string>
+    <string name="cilacap_selatan">Cilacap Selatan</string>
+    <string name="cilacap_tengah">Cilacap Tengah</string>
+    <string name="majenang">Majenang</string>
+    <string name="noimg">Galeri tidak tersedia</string>
+
+    <string name="direksi">Dapatkan Arah</string>
+
+    <string name="readmore">Selengkapnya</string>
+
+    <string name="sentuh">Sentuh untuk deskripsi</string>
+
+    <string name="aluntitle">Alun-Alun Cilacap</string>
+    <string name="alunalt">Jl. Jendral Sudirman, Tegalreja</string>
+    <string name="alunmap">Peta</string>
+    <string name="alundes"><![CDATA[<hr />
+<p>Hampir sama seperti alun-alun di kota-kota lainnya yang berada di Pulau Jawa, Alun-Alun Cilacap menggunakan sistem Macapat (Mocopat) yang di dalamnya terdapat masjid, kantor pemerintahan, alun-alun, dan pohon beringin.</p>
+<p>Di Kantor Bupati Cilacap sendiri terdapat benda cagar budaya di dalamnya, yakni pintu gerbang Kantor Bupati dan tempat tidur Bupati I.</p>
+<p>Pada pagi hari, biasanya dipakai masyarakat untuk berolahraga. Sedangkan, pada malam harinya biasa dijadikan tempat untuk menikmati keramaian Kota Cilacap.</p>
+<p>Selalu ramai dikunjungi oleh anak muda bahkan keluarga besar yang ingin melihat ramainya kota ini.
+</p>]]></string>
+
+    <string name="bentengtitle">Benteng Pendem</string>
+    <string name="bentengalt">Jl. Benteng</string>
+    <string name="bentengdes"><![CDATA[<hr /> <p>Dalam bahasa Belanda disebut Kusbatterij Op De Lantong Te Tjilatjap.</p>
+<p>Dibangun oleh Tentara Kerajaan Belanda tahun 1861-1879 untuk pertahanan Belanda dalam menghadapi serangan musuh, baik dari luar maupun dari dalam sampai dengan tahun 1942.</p>
+<p>Pada tahun 1952-1962 menjadi markas Banteng Loreng Kesatuan Jawa Tengah dan pada tahun 1962-1965 menjadi tempat pendaratan laut pasukan RPKAD.</p>
+<p>Pada tangal 26 November 1986, Benteng Pendem dipugar dan pada tanggal 28 April 1987 sampai dengan sekarang dibuka sebagai obyek wisata.</p> ]]></string>
+
+    <string name="lapastitle">Lembaga Pemasyarakatan Nusakambangan</string>
+    <string name="lapastitle2">Lapas Nusakambangan</string>
+    <string name="lapasalt">Pulau Nusakambangan</string>
+    <string name="lapasdes"><![CDATA[<hr />
+<p>Lapas Nusakambangan sudah berdiri sejak Belanda menjajah Indonesia. Pemerintahan penjajah ketika itu meneliti beberapa pulau di Indonesia yang akan digunakan sebagai rumah tahanan bagi para narapidana.</p>
+<p>Akhirnya, pada tahun 1908, Gubernur Belanda memutuskan untuk menjadikan Nusakambangan sebagai tempat tinggal bagi orang-orang yang dihukum.</p>
+<p>Lalu, ditetapkan sebagai pulau penjara melalui Ordonasi Staatblad No. 25 Tanggal 10 Agustus 1912. Kewenangan pulau itu diserahkan kepada Departemen Van Justitie (Departemen Kehakiman), yang sekarang menjadi Kemenkumham.</p>
+<p>Setelah Indonesia merdeka, dijadikan sebagai Lapas bagi narapidana yang dianggap telah melakukan kejahatan kelas berat.</p>
+<p>Untuk menuju ke Lapas Nusakambangan, wisatawan bisa menyeberang melalui Pelabuhan Wijaya Pura di Cilacap untuk menuju ke Pelabuhan Sodong di Nusakambangan.</p>
+<p>Pelabuhan Sodong pun merupakan pelabuhan yang bersejarah, karena didirikan pada era Kolonial Belanda.</p>
+<p>Selain itu, wisatawan bisa juga menyewa jasa penyeberangan pulau menggunakan perahu yang berada di kawasan Pantai Teluk Penyu.</p>
+]]></string>
+
+    <string name="benlingtitle">Benteng Lingkar</string>
+    <string name="benlingalt">Pulau Nusakambangan</string>
+    <string name="benlingdes"><![CDATA[<hr />
+<p>Benteng Lingkar dibangun pada tahun 1617 dan didirikan bersamaan dengan Benteng Karang Bolong.</p>
+<p>Benteng Lingkar merupakan benteng yang lebih kecil dibandingkan dengan Benteng Karang Bolong.</p>
+<p>Struktur bangunannya saat ini sudah banyak yang rusak, sehingga tidak diketahui bentuk asli dari benteng ini.</p>
+<p>Untuk menuju ke Benteng Lingkar, wisatawan bisa menyewa jasa penyeberangan pulau menggunakan perahu yang berada di kawasan Pantai Teluk Penyu.</p>
+]]></string>
+
+    <string name="benkartitle">Benteng Karang Bolong</string>
+    <string name="benkaralt">Pulau Nusakambangan</string>
+    <string name="benkardes"><![CDATA[<hr />
+<p>Benteng ini didirikan bersamaan dengan Benteng Lingkar.</p>
+<p>Fungsi Benteng Karang Bolong oleh tentara Belanda adalah sebagai kutub pertahanan guna menangkal serangan musuh yang datang dari laut atau menyerang kapal laut musuh dan sebagai gudang penyimpanan rempah-rempah.</p>
+<p>Dari Benteng Karang Bolong ini dapat diawasi jalur pelayaran di Samudra Indonesia. Antara Benteng Pendem dengan Benteng Karang Bolong keduanya saling melengkapi dalam hal pengawasan perairan Teluk Penyu.</p>
+<p>Benteng ini memiliki luas 6.000 m2 dengan 3 benteng utama di mana salah satunya adalah benteng bertingkat tiga yang mempunyai ruang rapat besar dan dilengkapi dengan meriam, sehingga bisa juga disebut sebagai Benteng Artileri.</p>
+<p>Benteng ini terbuat dari bata berlepa dan keseluruhan terdiri dari 4 lantai, yakni 2 lantai berada di atas permukaan tanah, sementara dua lantai berada di bawah permukaan tanah.</p>
+<p>Memiliki sejumlah ruangan-ruangan, di antaranya adalah ruangan barak prajurit , ruang tahanan, dan ruangan logistik.</p>
+<p>Untuk menuju ke Benteng Karang Bolong, wisatawan bisa menyewa jasa penyeberangan pulau menggunakan perahu yang berada di kawasan Pantai Teluk Penyu.</p>
+]]></string>
+
+    <string name="kerkhofftitle">Kerkhoff Cilacap</string>
+    <string name="kerkhoffalt">Cilacap Selatan</string>
+    <string name="kerkhoffdes"><![CDATA[<hr />
+<p>Letaknya dekat dengan Benteng Pendem atau Pantai Teluk Penyu.</p>
+<p>Terdapat ratusan makam milik warga Belanda dan warga asing dari negara lain yang diketahui dimakamkan di kawasan yang saat ini digunakan untuk warga Kristiani Cilacap.</p>
+<p>Sebagian dari mereka semasa hidupnya merupakan orang-orang penting seperti Asisten Residen, arsitek Benteng Pendem, Bajak Laut, dan lain-lain.</p>
+<p>Dari hasil penelitian Balai Penelitian Cagar Budaya Jawa Tengah, ditemukan makam tertua milik Therese von Lutzow, warga negara Jerman yang meninggal tahun 1852.</p>
+]]></string>
+
+    <string name="klentengtitle">Klenteng Lam Tjeng Kiong</string>
+    <string name="klentengtitle2">Lam Tjeng Kiong</string>
+    <string name="klentengalt">Jl. RE. Martadinata No.4, Tambakreja</string>
+    <string name="klentengdes"><![CDATA[<hr />
+<p>Klenteng ini didirikan pada tahun 1879.</p>
+<p>Nama Klenteng ini terdiri dari tiga kata, yakni Lam berarti selatan, Tjeng berarti bersih atau suci, dan Kiong berarti istana.</p>
+<p>Sehingga, Lam Tjeng Kiong berarti Istana Selatan yang Bersih atau Suci. Sesuai dengan namanya, Klenteng ini pun menghadap ke arah selatan.</p>
+<p>Di Klenteng ini, terdapat sekitar 200 dewa yang dipercaya oleh umat dan masing-masing dibuat replika atau gambaran berupa patung. Terdapat pula Barongsai yang sering digunakan untuk memeriahkan acara-acara keagamaan.</p>
+]]></string>
+
+    <string name="teluktitle">Teluk Penyu</string>
+    <string name="telukalt">Jl. Pasir Emas</string>
+    <string name="telukdes"><![CDATA[<hr />
+<p>Pantai ini letaknya berdekatan dengan Benteng Pendem.</p>
+<p>Pantai ini berpasir dan banyak ditumbuhi pepohonan sehingga memberikan rasa keteduhan bagi para wisatawan.</p>
+<p>Panorama keindahan pantai yang indah ini dapat dinikmati oleh wisatawan, baik pada saat matahari terbit maupun pada saat matahari terbenam.</p>
+<p>Di sepanjang pantai, dapat dijumpai berbagai makanan khas Cilacap, seperti tempe mendoan dan makanan khas hasil laut serta cinderamata berupa kerajinan kerang bagi wisatawan yang ingin menjadikannya sebagai oleh-oleh.</p>]]></string>
+
+    <string name="kalimpattitle">Pantai Kalimpat</string>
+    <string name="kalimpatalt">Pulau Nusakambangan, Tambakreja</string>
+    <string name="kalimpatdes"><![CDATA[<hr />
+<p>Pantai ini terletak di tenggara Pulau Nusakambangan. Letaknya cukup jauh dari Benteng Lingkar dan Benteng Karang Bolong.</p>
+<p>Untuk menuju pantai, wisatawan bisa menggunakan jasa pemandu yang berada di kawasan Benteng Lingkar.</p>
+<p>Wisatawan hanya bisa mencapai pantai ini dengan jalan kaki. Waktu tempuh untuk sampai ke pantai ini dari Benteng Lingkar kurang lebih 1,5 jam.</p>
+]]></string>
+
+    <string name="pasirtitle">Pantai Pasir Putih</string>
+    <string name="pasiralt">Pulau Nusakambangan, Tambakreja</string>
+    <string name="pasirdes"><![CDATA[<hr />
+<p>Pantai ini terletak di timur laut Pulau Nusakambangan.</p>
+<p>Pantai ini biasanya dijadikan tempat singgah bagi wisatawan yang ingin melihat pantai atau obyek wisata lainnya yang berada di Pulau Nusakambangan.</p>
+<p>Di pantai ini banyak terdapat pedagang yang menjual makanan dan minuman untuk memenuhi kebutuhan para wisatawan sebelum atau sesudah menjelajahi Pulau Nusakambangan.</p>
+]]></string>
+
+    <string name="srandiltitle">Gunung Srandil</string>
+    <string name="srandilalt">Glempangpasir</string>
+    <string name="srandildes"><![CDATA[<hr />
+<p>Salah satu versi cerita rakyat mengenai penghuni pertama Gunung Srandil adalah Sultan Mukhriti putra kedua dari Dewi Sari Banon Ratu Sumenep, Jawa Timur. Kedatangannya itu untuk bertapa, namun ia menghilang, dan yang ada tinggal petilasannya yang terletak di sebelah timur, dikenal dengan nama Embah Gusti Agung Sultan Mukhriti.</p>
+<p>Setiap hari dikunjungi orang untuk berziarah, karena tempat tersebut tidak hanya dikenal oleh masyarakat sekitar saja, akan tetapi sampai keluar Pulau Jawa.</p>
+<p>Tujuan berkunjung ke Gunung Srandil bermacam-macam. Para peziarah biasanya berkunjung atau bertapa pada Malam Jumat Kliwon atau Selasa Kliwon pada Bulan Syura.</p>
+<p>Adapun petilasan-petilasan yang ada di Gunung Srandil di antaranya adalah Nyai Dewi Tanjung Sekarsari, Kaki Semar Tunggul Sabdojati Dayo Amongrogo, Juragan Dampo Awang, dan Langlang Buwana yang berada di atas bukit.</p>
+]]></string>
+
+    <string name="seloktitle">Gunung Selok</string>
+    <string name="selokalt">Karangbenda</string>
+    <string name="selokdes"><![CDATA[<hr />
+<p>Gunung Selok merupakan daerah perbukitan yang menjulang menyerupai gunung dan kawasan hutan homogen tanaman mahoni.</p>
+<p>Di kawasan ini terdapat beberapa sanggar yang digunakan untuk ziarah atau beribadah, yaitu Jambe 5, Jambe, dan Padepokan Sang Hyang Gunung Jati.</p>
+<p>Tempat-tempat tersebut sering disinggahi untuk tujuan rohani, terutama Padepokan Sang Hyang Gunung Jati.</p>
+<p>Padepokan ini sangat ramai menjelang bulan Suro dan pengunjung yang melakukan ziarah banyak berasal dari luar daerah.</p>
+]]></string>
+
+    <string name="sodongtitle">Pantai Sodong</string>
+    <string name="sodongalt">Karangbenda</string>
+    <string name="sodongdes"><![CDATA[<hr />
+<p>Pantai ini dekat dengan Gunung Selok.</p>
+<p>Pesona pantai ini sangat menyejukkan mata ketika wisawatan dapat melihat pohon cemara udang yang ditanam secara rapi sehingga aspek estetika sangat terlihat.</p>
+<p>Bila wisatawan melihat ke arah barat, akan terlihat pantai ini memecah ombak yang kokoh dan juga aliran sungai yang menuju ke laut serta pemandangan Gunung Selok yang menawan.</p>
+<p>Wisatawan juga dapat melihat matahari yang terbenam di ufuk barat.</p>
+]]></string>
+
+    <string name="sudarmantitle">Museum Soesilo Soedarman</string>
+    <string name="sudarmanalt">Gentasari</string>
+    <string name="sudarmandes"><![CDATA[<hr />
+<p>Sebuah museum yang menyimpan benda-benda dari mantan Menteri Pariwisata Pos dan Telekomunikasi Indonesia, Soesilo Soedarman.</p>
+<p>Museum ini menyimpan benda-benda pribadi (tempat tidur, baju-baju dinas, dan penghargaan-penghargaan yang pernah diterima) hingga kendaraan perang (kendaraan lapis baja) yang pernah digunakan.</p>
+<p>Museum ini dilengkapi dengan perpustakaan dan ruang baca, kolam renang, dan sarana permainan anak-anak.</p>
+]]></string>
+    
+    <string name="padangtitle">Gunung Padang</string>
+    <string name="padangalt">Desa Salebu</string>
+    <string name="padangdes"><![CDATA[<hr />
+<p>Berada di tengah hutan berhawa sejuk. Untuk menuju lokasi tersebut perlu waktu satu jam dengan akses sepeda motor sampai desa terakhir dan dilanjutkan berjalan kaki &plusmn;6 jam pulang pergi untuk dua lokasi yang berbeda ketinggian.</p>
+<p>Terdiri dari dua lokasi yang disebut oleh masyarakat setempat dengan nama "Pabahanan" (sebelah timur) dan "Makam Hajar Sakti" (sebelah barat).</p>
+<p>Di Pabahanan dijumpai jenis batu andesit berbentuk balok dengan ukuran hampir seragam.</p>
+<p>Sedangkan, di Makam Hajar Sakti ditemukan dua buah batu andesit berbentuk balok dan disusun tegak lurus (vertikal) menyerupai pola bentuk nisan.</p>
+<p>Di Gunung Padang, warga biasa berdoa di tempat itu jika mempunyai keinginan. Biasanya pada bulan Suro, masyarakat dari kawasan Jawa Barat seperti Cirebon dan sekitarnya biasa melakukan semedi di kawasan itu.</p>
+<p>Mengenai awal berdirinya Situs Pabahanan dan Makam Hajar Sakti masih perlu diteliti lebih lanjut, karena sedikitnya informasi mengenai hal tersebut.</p>
+]]></string>
+
+    <string name="mariatitle">Gua Maria</string>
+    <string name="mariaalt">Desa Klaces</string>
+    <string name="mariades"><![CDATA[<hr />
+<p>Gua ini tanpa sengaja ditemukan oleh penjajah Belanda pada sekitar abad ke-16 dan pernah digunakan sebagai tempat ibadah umat Kristiani pada saat Belanda menduduki Pulau Jawa.</p>
+<p>Mempunyai lorong sepanjang kurang lebih 150 meter dengan lebar 10 meter.</p>
+<p>Di dalam gua tersebut terdapat stalakmit yang menyerupai anjing dan seorang perempuan yang sedang menyusui, oleh karena bentuknya seperti Bunda Maria, maka sebagian masyarakat menyebutnya Gua Maria.</p>
+<p>Di dalamnya juga terdapat parit yang dibangun oleh Belanda untuk membendung air tersebut, maka gua ini disebut sebagai Gua Bendung.</p>
+]]></string>
+
+    <string name="masigittitle">Gua Masigit Sela</string>
+    <string name="masigitalt">Desa Klaces</string>
+    <string name="masigitdes"><![CDATA[<hr />
+<p>Arti Masigit Sela adalah masjid yang terbuat dari sela atau batu.</p>
+<p>Gua ini merupakan lubang yang cukup besar dan jauh masuk ke perut bumi oleh karena proses alam yang bersangkutan terlalu lama yang menghasilkan stalakmit dan stalaktit di dalam gua tersebut, sehingga tampak sangat indah.</p>
+<p>Kalau diamati sepintas, gua ini mirip pintu masuk bangunan masjid, oleh karenanya sebagian masyarakat menyebut Gua Masigit Sela sebagai Gua Ibadah Sunan Kalijaga dan Sri Sultan Hamengkubuwana.</p>
+<p>Apalagi dikuatkan dengan sejumlah tangga yang terdapat di mulut gua dan sebuah beduk. Di dalam gua juga terdapat mata air sebagai tempat untuk mengambil air wudhu.</p>
+<p>Wisatawan yang berkunjung ke gua ini mempunyai berbagai macam tujuan, yakni ada yang bertujuan untuk menenangkan diri, meningkatkan iman, ngalap berkah, dan ada juga yang datang untuk mengirim doa kepada para leluhur.</p>
+<p>Ada stalakmit yang membentuk cekungan mirip sebuah tempayan yang disebut pedaringan penggawa, dan dinding batu yang memisahkan pedaringan penggawa dikenal sebagai tempat pertapaan Aji Saka yang diyakini jika dapat memeluk tiang, maka keinginannya akan terkabul.</p>
+]]></string>
+
+    <string name="ptpntitle">Perusahan Terbatas Perkebunan Negara IX</string>
+    <string name="ptpnalt">Cilacap Tengah</string>
+    <string name="ptpndes"><![CDATA[<hr />
+<p>Awalnya merupakan buatan Belanda, namun selanjutnya dinasionalisasi oleh pemerintah Indonesia.</p>
+<p>PTPN IX sendiri didirikan pada tanggal 11 Maret 1996 berdasarkan PP No. 14 Tahun 1996 yang merupakan peleburan dari PT Perkebunan XV, XVI, dan XVIII.</p>
+<p>PTPN IX memiliki dua Divisi, yakni Divisi Tanaman Tahunan (karet, kopi, dan teh) dan Divisi Tanaman Semusim (Pabrik Gula).</p>
+<p>Sedangkan, tanaman yang dibudidayakan di Cilacap adalah karet. Saat ini juga sedang dikembangkan budidaya tanaman Jabon (Jati Bongsor).</p>
+<p>PTPN IX memiliki luas kurang lebih 700 hektar.</p>
+<p>Setelah berkunjung dari PTPN IX, pengunjung bisa melihat keindahan persawahan yang berada di dekat PTPN IX. Lihat Foto dan Video</p>
+]]></string>
+
+    <string name="watutitle">Watu Lingga</string>
+    <string name="watualt">Desa Pesanggrahan</string>
+    <string name="watudes">
+        <![CDATA[<hr />
+<p>Salah satu tinggalan masa klasik hindu di kecamatan kesugihan. Lingga merupakan manivestasi dewa siwa sebagai dewa tertinggi agama Hindu di Indonesia.</p>
+<p>Dilokasi tempat Watu Lingga ini berada merupakan satu kawasan tempat ditemukanya Prasasti Tembaga Luitan. Sampai saat ini belum ada informasi atau laporan terkait hal itu meski sudah banyak dilakukan penelitian oleh institusi pendidikan atau akademisi.</p>
+</p>]]>
+    </string>
+
+    <string name="title_activity_tab_alun">Deskripsi</string>
+    <string name="title_activity_tab_baru">tab_baru</string>
+    <string name="title_activity_makam">Makam</string>
+
+
+
+
+
+
+    <string name="masjidtitle">Masjid Agung Darussalam</string>
+    <string name="masjidalt">Jl. Mataram 1, Sidanegara</string>
+    <string name="masjiddes"><![CDATA[<hr />
+<p>Masjid Agung Darussalam Cilacap dibangun pada tanggal 29 April 1776 oleh mbah Kyai Kali Husen dan mbah Kyai Kali Ibrahim, keduanya keturunan Sunan Kalijaga.</p>
+<p>Renovasi pertama dilaksanakan oleh umat Islam se Kabupaten Cilacap pada tahun 1929, sedangkan masjid agung yang lama dipindah dan dibawa oleh penghulu pertama ke Kawunganten, setelah beberapa lama dipindahkan lagi ke Desa Kalijeruk pada tahun 1969.</p>
+]]></string>
+
+
+    <string name="jambutitle">Situs Candi Jambu</string>
+    <string name="jambualt">Desa Cilongkrang</string>
+    <string name="jambudes"><![CDATA[<hr />
+<p>Situs ini terletak pada sebuah puncak bukit di Gunung Jambu Desa Cilongkrang Kecamatan Wanareja. Di situs ini ditemukan sebuah patung lembu (andini) dan yoni.</p>
+<p>Masyarakat setempat pun lebih mengenalnya sebagai petilasan panembahan celeng.</p>
+<p>Batu yoni pecah menjadi 4 bagian (depan) dan di belakangnya patung badan lembu. Lokasi patung itu dikenal sebagai petilasan Syekh Abdul Qadir Jaelani.</p>
+]]></string>
+
+    <string name="sindertitle">Rumah Sinder</string>
+    <string name="sinderalt">Desa Cilongkrang</string>
+    <string name="sinderdes"><![CDATA[<hr />
+<p>Rumah ini dikenal oleh penduduk sekitar dengan nama "Rumah Gedong", diperkirakan diresmikan pada tahun 1926 di area kebun karet daerah Cilongkrang.</p>
+]]></string>
+
+    <string name="sumolangutitle">Makam Sumolangu</string>
+    <string name="sumolangualt">Gn. Selok</string>
+    <string name="sumolangudes"><![CDATA[<hr />
+<p>Makam Kyai Sumolangu terletak di kawasan Gunung Selok. Makam ini masih ditutupi gubug dan di sekelilingnya baru dibangun pondasi keliling.</p>
+<p>Konon Kyai Sumolangu berasal dari daerah Kebumen dan meninggal di Selok. Kyai Somalangu adalah sebutan tokoh Islam Syekh Mahfud Abdurrahman yang makamnya terdapat di gunung Selok dan menjadi obyek wisata ziarah.</p>
+]]></string>
+
+
+
+
+    <string name="stakesugihantitle">Stasiun Kesugihan</string>
+    <string name="stakesugihanalt">Menganti</string>
+    <string name="stakesugihandes"><![CDATA[<hr />
+<p>Stasiun Kesugihan merupakan stasiun kereta api kelas IIIkecil yang terletak di Kesugihan, Kesugihan, Cilacap.</p>
+<p>Stasiun yang terletak pada ketinggian +9 m ini termasuk dalam Daerah Operasi V Purwokerto.</p>
+<p>Stasiun ini memiliki tiga jalur dengan jalur 2 sebagai sepur lurus dan sudah menggunakan sistem persinyalan elektrik. Tidak ada kereta api yang berhenti di stasiun ini, kecuali jika terjadi persilangan atau persusulan antarkereta api.</p>
+]]></string>
+
+    <string name="stakarangtitle">Stasiun Karangkandri</string>
+    <string name="stakarangalt">JL. Raya Kesugihan, Karangreja</string>
+    <string name="stakarangdes"><![CDATA[<hr />
+<p>Stasiun yang terletak pada ketinggian lebih dari 8 meter ini termasuk dalam Daerah Operasi V Purwokerto.</p>
+<p>Stasiun ini hanya memiliki dua jalur dengan jalur 1 sebagai sepur lurus. Stasiun ini mempunyai emplasemen yang unik karena ditutupi oleh rumput yang halus dan hijau.</p>
+]]></string>
+
+    <string name="stakroyatitle">Stasiun Kroya</string>
+    <string name="stakroyaalt">Segaralangu, Cipari</string>
+    <string name="stakroyades"><![CDATA[<hr />
+<p>Stasiun Kroya (KYA) adalah stasiun kereta api kelas besar tipe B yang terletak di Bajing, Kroya, Cilacap.</p>
+<p>Stasiun yang terletak pada ketinggian +11 meter ini termasuk dalam Daerah Operasi V Purwokerto.</p>
+<p>Pada jaman Pemerintahan Belanda, stasiun ini digunakan sebagai tempat penggabungan rangkaian Eendaagsche Express yang melayani rute Batavia-Soerabaja pp dengan pengumpannya (KA feeder) yang datang dari Bandung.</p>
+]]></string>
+
+    <string name="stamaostitle">Stasiun Maos</string>
+    <string name="stamaosalt">Maos</string>
+    <string name="stamaosdes"><![CDATA[<hr />
+<p>Stasiun Maos adalah stasiun kereta api kelas II yang terletak di Karangreja, Maos, Cilacap. Stasiun yang terletak pada ketinggian +8 m ini termasuk dalam Daerah Operasi V Purwokerto.</p>
+<p>Stasiun Maos terletak ratusan meter dari jembatan yang melintasi Sungai Serayu. Dahulu terdapat jalur rel dari stasiun ini menuju Stasiun Purwokerto Timur (kini tak berfungsi lagi), yang dibangun oleh Serajoedal Stoomtram Maatschappij.</p>
+<p>Jalur tersebut dahulu digunakan untuk mengangkut tebu. Sekarang sudah tidak berfungsi lagi.</p>
+]]></string>
+
+    <string name="stagumilirtitle">Stasiun Gumilir</string>
+    <string name="stagumiliralt">Gumilir</string>
+    <string name="stagumilirdes"><![CDATA[<hr />
+<p>Stasiun Gumilir (GM) merupakan stasiun kereta api kelas III kecil yang berada di Gumilir, Cilacap.</p>
+<p>Stasiun yang terletak pada ketinggian +7 m ini termasuk dalam Daerah Operasi V Purwokerto. Sekitar 1,5 km ke arah barat daya, terdapat percabangan jalur kereta api menuju Stasiun Karangtalun yang berada di dalam pabrik semen PT Holcim Indonesia Tbk.</p>
+<p>Stasiun ini menjadi stasiun pertama yang menggunakan sistem sinyal Computer Base Interlocking yang merupakan program tiga Kementerian antara lain Kementerian Perhubungan, Kementerian Negara Riset dan Teknologi, dan Kementerian BUMN.</p>
+]]></string>
+
+    <string name="stajeruktitle">Stasiun Jeruklegi</string>
+    <string name="stajerukalt">Jeruklegi Wetan</string>
+    <string name="stajerukdes"><![CDATA[<hr />
+<p>Stasiun Jeruklegi (JRL) merupakan stasiun kereta api kelas III kecil yang terletak di Jeruklegi Wetan, Jeruklegi, Cilacap.</p>
+<p>Stasiun yang terletak pada ketinggian lebih dari 10 m ini termasuk dalam Daerah Operasi V Purwokerto.</p>
+<p>Stasiun ini memiliki tiga jalur dengan jalur 1 sebagai sepur lurus. Stasiun ini berada di barat jalan raya yang menghubungkan Cilacap-Wangon.</p>
+]]></string>
+
+    <string name="stakawutitle">Stasiun Kawunganten</string>
+    <string name="stakawualt">Kawunganten Lor</string>
+    <string name="stakawudes"><![CDATA[<hr />
+<p>Stasiun Kawunganten (KWG) adalah stasiun kereta api kelas III kecil yang terletak di Kawunganten Lor, Kawunganten, Cilacap. <br />Stasiun yang terletak pada ketinggian +11 m ini termasuk dalam Daerah Operasi V Purwokerto. Stasiun ini memiliki tiga jalur dengan jalur 2 sebagai sepur lurus.</p>
+]]></string>
+
+    <string name="stagandrungtitle">Stasiun Gandrungmangun</string>
+    <string name="stagandrungalt">Gandrungmanis</string>
+    <string name="stagandrungdes"><![CDATA[<hr />
+<p>Stasiun Gandrungmangun (GDM), atau yang lebih dikenal oleh masyarakat setempat sebagai Stasiun Gandrungmangu merupakan stasiun kereta api kelas IIIkecil yang terletak di Gandrungmanis, Gandrungmangu, Cilacap, tepatnya di dekat Pasar Gandrungmangu.</p>
+<p>Stasiun yang terletak pada ketinggian 15 m ini termasuk dalam Daerah Operasi V Purwokerto. Stasiun ini memiliki tiga jalur dengan jalur 2 sebagai sepur lurus.</p>
+]]></string>
+
+    <string name="stasidarejatitle">Stasiun Sidareja</string>
+    <string name="stasidarejaalt">Sidamulya</string>
+    <string name="stasidarejades"><![CDATA[<hr />
+<p>Stasiun Sidareja (SDR) merupakan stasiun kereta api kelas II yang terletak di Sidamulya, Sidareja, Cilacap.</p>
+<p>Stasiun yang terletak pada ketinggian 5 m ini termasuk dalam Daerah Operasi V Purwokerto. Stasiun ini cukup ramai karena setiap harinya melayani rata-rata ratusan penumpang KA yang singgah di sini.</p>
+<p>Stasiun ini memiliki empat jalur dengan jalur 2 sebagai sepur lurus.</p>
+]]></string>
+
+    <string name="staciparititle">Stasiun Cipari</string>
+    <string name="staciparialt">Jl. Cipari, Mulyadadi</string>
+    <string name="staciparides"><![CDATA[<hr />
+<p>Stasiun Cipari (CPI) merupakan stasiun kereta api kelas IIIkecil yang terletak di Cipari, Cipari, Cilacap.</p>
+<p>Stasiun yang terletak pada ketinggian 11 m ini termasuk dalam Daerah Operasi V Purwokerto. Stasiun ini berada 100 meter di barat pasar dan di depannya terdapat pemberhentian angkot.</p>
+<p>Stasiun ini hanya memiliki dua jalur dengan jalur 2 sebagai sepur lurus. Stasiun ini juga mempunyai benda-benda unik peninggalan Belanda seperti brankas, menara air, dan stempel tiket.</p>
+<p>Di sebelah barat stasiun ini terdapat bekas Halte Cilongkrang yang sudah tidak aktif sejak tahun 2003.</p>
+]]></string>
+
+    <string name="staciltitle">Stasiun Cilacap</string>
+    <string name="stacilalt">Cilacap Selatan</string>
+    <string name="stacildes"><![CDATA[<hr />
+<p>Kota Cilacap dipandang oleh pemerintah kolonial sebagai kota pelabuhan penting di Jawa. Sebagai kota transit, menampung komoditas dari beberapa wilayah sekitarnya (Banyumas, Kedu, hingga Yogyakarta), di Cilacap dibangunlah stasiun lengkap dengan jalur kereta apinya.</p>
+<p>Pembangunan stasiun Cilacap dilakukan secara bertahap, ditangani oleh perusahaan kereta api negara Staatspoorwegen (SS). Arsitektur bangunan Stasiun Cilacap yang pertama bergaya neo-klasik Empire seperti stasiun-stasiun SS yang lain di masa itu. Pintu masuk dan hall utama dengan langit-langit tinggi berada tepat di tingah-tengah, diapit ruang tunggu dan ruang-ruang lain di kiri dan kanannya. Peron dinaungi atap dengan kuda-kuda Polonceau dari besi.</p>
+<p>Pada 4 Maret 1942 Cilacap dibom oleh pesawat udara Angkatan Laut Jepang. Di pelabuhan terjadi kebakaran besar dan lima kapal ditenggelamkan. Sebuah kereta api yang baru tiba di Stasiun Cilacap dari Cirebon juga dibom, yang mengakibatkan lebih dari 150 orang meninggal, sedang bangunan Stasiun Cilacap mengalami kerusakan parah.</p>
+<p>Pada 1943 bangunan stasiun yang hancur itu dibangun kembali oleh Rikuyu Sokyoku, badan yang bertanggungjawab atas transportasi darat di masa pendudukan Jepang. Rancangan bangunan itu dibuat oleh Ir. Thomas Nix (1904-1998), arsitek dan perencana kota dari Bandung.</p>
+<p>Sebelum kedatangn Jepang di Indonesia, pada 1938 Nix telah merancang gedung BPM-Shell di Jakarta dan Semarang yang sekarang menjadi kantor Pertamina. Rancangan Nix untuk Station Cilacap bergaya modernisme Nieuwe Bouwen. Bangunan ini seluruhnya menggunakan konstruksi beton bertulang.</p>
+]]></string>
+    <string name="adipala">Adipala</string>
+    <string name="cipari">Cipari</string>
+    <string name="gandrung">Gandrungmangun</string>
+    <string name="gumilir">Gumilir</string>
+    <string name="jeruk">Jeruklegi</string>
+    <string name="kampunglaut">Kampung Laut</string>
+    <string name="kawu">Kawunganten</string>
+    <string name="kesugihan">Kesugihan</string>
+    <string name="kroya">Kroya</string>
+    <string name="maos">Maos</string>
+    <string name="masjidtitle2">Darussalam</string>
+    <string name="selok">Selok</string>
+    <string name="sidareja">Sidareja</string>
+    <string name="wanareja">Wanareja</string>
+
+
+</resources>

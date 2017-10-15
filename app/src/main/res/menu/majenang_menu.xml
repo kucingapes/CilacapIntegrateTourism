@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_back"
+            android:title="@string/back" />
+    </group>
+    <item android:title="Majenang">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_padang"
+                    android:icon="@drawable/ic_gunung"
+                    android:title="@string/padangtitle" />
+            </group>
+        </menu>
+    </item>
+
+</menu>

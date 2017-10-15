@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_selatan"
+            android:icon="@drawable/ic_selatan"
+            android:title="@string/cilacap_selatan" />
+        <item
+            android:id="@+id/nav_tengah"
+            android:icon="@drawable/ic_tengah"
+            android:title="@string/cilacap_tengah" />
+        <item
+            android:id="@+id/nav_adipala"
+            android:icon="@drawable/ic_adipala"
+            android:title="Adipala" />
+        <item
+            android:id="@+id/nav_kroya"
+            android:icon="@drawable/ic_kroya"
+            android:title="Kroya" />
+        <item
+            android:id="@+id/nav_majenang"
+            android:icon="@drawable/ic_kroya"
+            android:title="Majenang" />
+        <item
+            android:id="@+id/nav_kampunglaut"
+            android:icon="@drawable/ic_kroya"
+            android:title="Kampung Laut" />
+        <item
+            android:id="@+id/nav_kesugihan"
+            android:icon="@drawable/ic_kroya"
+            android:title="@string/kesugihan" />
+        <item
+            android:id="@+id/nav_wanareja"
+            android:icon="@drawable/ic_kroya"
+            android:title="Wanareja" />
+    </group>
+
+    <item android:title="@string/other">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_stasiun"
+                    android:title="@string/stasiun"
+                    android:icon="@drawable/train" />
+
+            </group>
+        </menu>
+    </item>
+
+
+    <item android:title="@string/opsi">
+        <menu>
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/setting"
+                    android:title="@string/setting"
+                    android:icon="@drawable/setting" />
+                <item
+                    android:id="@+id/nav_about"
+                    android:title="@string/aplikasi"
+                    android:icon="@drawable/info"/>
+                <item
+                    android:id="@+id/nav_about_cilacap"
+                    android:title="@string/cilacap"
+                    android:icon="@drawable/web"/>
+
+            </group>
+        </menu>
+    </item>
+
+</menu>

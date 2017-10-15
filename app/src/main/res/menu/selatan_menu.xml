@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_back"
+            android:title="@string/back" />
+    </group>
+
+    <item android:title="@string/cilacap_selatan">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_benteng"
+                    android:icon="@drawable/ic_benteng"
+                    android:title="@string/bentengtitle" />
+                <item
+                    android:id="@+id/nav_benling"
+                    android:icon="@drawable/ic_benteng"
+                    android:title="@string/benlingtitle" />
+
+                <item
+                    android:id="@+id/nav_lapas"
+                    android:icon="@drawable/ic_lapas"
+                    android:title="@string/lapastitle" />
+                <item
+                    android:id="@+id/nav_benkar"
+                    android:icon="@drawable/ic_benteng"
+                    android:title="@string/benkartitle" />
+
+                <item
+                    android:id="@+id/nav_kerkhoff"
+                    android:icon="@drawable/ic_makam"
+                    android:title="@string/kerkhofftitle" />
+                <item
+                    android:id="@+id/nav_klenteng"
+                    android:icon="@drawable/ic_castle"
+                    android:title="@string/klentengtitle" />
+                <item
+                    android:id="@+id/nav_teluk"
+                    android:icon="@drawable/ic_pantai"
+                    android:title="@string/teluktitle" />
+                <item
+                    android:id="@+id/nav_kalimpat"
+                    android:icon="@drawable/ic_pantai"
+                    android:title="@string/kalimpattitle" />
+                <item
+                    android:id="@+id/nav_pasir"
+                    android:icon="@drawable/ic_pantai"
+                    android:title="@string/pasirtitle" />
+            </group>
+
+        </menu>
+    </item>
+
+</menu>

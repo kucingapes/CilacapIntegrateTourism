@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_back"
+            android:title="@string/back" />
+    </group>
+
+    <item android:title="@string/cilacap_tengah">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_alun"
+                    android:icon="@drawable/ic_tugu"
+                    android:title="@string/aluntitle" />
+                <item
+                    android:id="@+id/nav_ptpn"
+                    android:icon="@drawable/ic_ptpn"
+                    android:title="PTPN IX" />
+                <item
+                    android:id="@+id/nav_masjid"
+                    android:icon="@drawable/ic_masjid"
+                    android:title="@string/masjidtitle2" />
+            </group>
+        </menu>
+    </item>
+</menu>

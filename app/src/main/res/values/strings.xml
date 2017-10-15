@@ -1,0 +1,364 @@
+<resources>
+    <string name="app_name">Cilacap Integrated Tourism</string>
+    <string name="app_name_des">Cultural Exploration in Cilacap District Using Integrated Tourism Concept</string>
+    <string name="peta_cilacap">Cilacap Integrated Tourism</string>
+    <string name="prodi">History Educational</string>
+    <string name="kampus">University Muhammadiyah PROF. DR. HAMKA</string>
+    <string name="lang">Change Language?</string>
+    <string name="web"><![CDATA[<hr /><u>http://www.uhamka.ac.id/</u>]]></string>
+    <string name="bahasa">Language</string>
+    <string name="opsi">Option</string>
+    <string name="versi">Version 1.10.15</string>
+    <string name="setting">Setting</string>
+    <string name="back">Back</string>
+    <string name="expand">Read More</string>
+
+    <string name="next">Read more</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Language</string>
+    <string name="aplikasi">About Application</string>
+    <string name="cilacap">Cilacap Profile</string>
+    <string name="doubleback">Double tap to exit application</string>
+    <string name="selok">Selok</string>
+    <string name="maos">Maos</string>
+    <string name="gumilir">Gumilir</string>
+    <string name="jeruk">Jeruklegi</string>
+    <string name="kawu">Kawunganten</string>
+    <string name="gandrung">Gandrungmangun</string>
+    <string name="sidareja">Sidareja</string>
+    <string name="cipari">Cipari</string>
+
+    <string name="other">Other</string>
+    <string name="stasiun">Station</string>
+
+    <string name="toastawal">Application Google Maps must be installed!</string>
+    <string name="noimg">Gallery not avalailabe</string>
+
+    <string name="about">About</string>
+    <string name="cilacap_selatan">South Cilacap</string>
+    <string name="cilacap_tengah">Central Cilacap</string>
+    <string name="adipala">Adipala</string>
+    <string name="kroya">Kroya</string>
+    <string name="majenang">Majenang</string>
+    <string name="kampunglaut">Kampung Laut</string>
+    <string name="wanareja">Wanareja</string>
+    <string name="kesugihan">Kesugihan</string>
+
+    <string name="direksi">Get Direction</string>
+
+    <string name="readmore">Read More</string>
+
+    <string name="sentuh">Tap for description</string>
+    <string name="jambu">Jambu Temple Heritage</string>
+
+    <string name="aluntitle">Alun-Alun Cilacap</string>
+    <string name="alunalt">Jl. Jendral Sudirman, Tegalreja</string>
+    <string name="alunmap">Peta</string>
+    <string name="alundes"><![CDATA[<hr />
+<p>Almost the same as the square in other cities located on Java Island, Cilacap Square uses the Macapat system (Mocopat) in which there are mosques, government offices, squares, and beringin trees.</p>
+<p>In the Office of the Cilacap Regent itself there is a cultural heritage object in it, namely the gate of the Regents Office and the Bupati I private room.</p>
+<p>In the morning, usually used by the public to exercise. Meanwhile, in the evening is usually used as a place to enjoy the crowd of Cilacap City.</p>
+<p>The city is always crowded by young people and even big families who want to see the city crowd.
+</p>]]></string>
+
+    <string name="bentengtitle">Benteng Pendem</string>
+    <string name="bentengalt">Jl. Benteng</string>
+    <string name="bentengdes"><![CDATA[<hr /> <p>In Dutch called Kusbatterij Op De Lantong Te Tjilatjap.</p>
+<p>Built by the Royal Dutch Army from 1861-1879 for Dutch defense in the face of enemy attacks, both from the outside and from within until 1942.</p>
+<p>In 1952-1962 it became the headquarters of Banteng Loreng Kesatuan Central Java and in 1962-1965 became the landing place of RPKAD troops. </p>
+<p>On November 26, 1986, Pendem Fort was restored and on 28 April 1987 until now it was opened as a tourist attraction.</p>]]></string>
+
+    <string name="lapastitle">Nusakambangan Prison</string>
+    <string name="lapastitle2">Nusakambangan Prison</string>
+    <string name="lapasalt">Nusakambangan Island</string>
+    <string name="lapasdes"><![CDATA[<hr />
+<p>Nusakambangan Prison has been established since the Dutch colonized Indonesia. The colonial government then examined several islands in Indonesia that would be used as a prison for the prisoners.</p>
+<p>Finally, in 1908, the Dutch Governor decided to make Nusakambangan a place of residence for those who were punished.</p>
+<p>Then, set up as a prison island through the Staatblad Ordinance No. 25 August 10, 1912. The authority of the island was handed over to the Department of Van Justitie (Department of Justice), now Kemenkumham.</p>
+<p>After Indonesia became independent, it was used as a prison for prisoners who were considered to have committed serious crimes.</p>
+<p>To go to Nusakambangan Prison, tourists can cross through Wijaya Pura Harbor in Cilacap to go to Sodong Port in Nusakambangan. </p>
+<p>Sodong Port is also a historic harbor, since it was founded in the Dutch Colonial era. </p>
+<p>In addition, tourists can also hire the services of crossing the island using a boat that is in Turtle Bay Beach area. </p>
+]]></string>
+
+    <string name="benlingtitle">Benteng Lingkar</string>
+    <string name="benlingalt">Nusakambangan Island</string>
+    <string name="benlingdes"><![CDATA[<hr />
+<p>The Circle Benteng was built in 1617 and was established in conjunction with Benteng Karang Bolong. </p>
+<p>The Circle Benteng is a smaller fort compared to Benteng Karang Bolong. </p>
+<p>The structure of the building is now much damaged, so no known original form of this fort. </p>
+<p>To get to Benteng Lingkar, tourists can hire the services of island crossing by boat located in Turtle Bay Beach area. </p>
+]]></string>
+
+    <string name="benkartitle">Benteng Karang Bolong</string>
+    <string name="benkaralt">Nusakambangan Island</string>
+    <string name="benkardes"><![CDATA[<hr />
+<P> The fort was erected together with the Ring Fortress. </p>
+<p> The function of Benteng Karang Bolong by the Dutch army is as a polar defense to ward off enemy attacks coming from the sea or attacking enemy ships and as a spice storage warehouse. </p>
+<p> From Benteng Karang Bolong this can be watched shipping line in Indonesia Ocean. Between Pendem Fort and Karang Bolong Fort are both complementary in terms of monitoring Turtle Bay waters. </p>
+<p> The fort has an area of ​​6,000 m2 with 3 main fortresses in which one of them is a three-story fortress that has a large meeting room and is equipped with a cannon, so it can also be called the Artillery Fortress. </p>
+<p> The fort is made of brick berlepa and the whole consists of 4 floors, ie 2 floors above ground level, while two floors are below ground level. </p>
+<P> It has a number of rooms, among them is a barracks room of soldiers, detention rooms, and logistics rooms. </p>
+<P> To get to Benteng Karang Bolong, tourists can hire the services of crossing the island by boat located in Turtle Bay Beach area. </p>
+]]></string>
+
+    <string name="kerkhofftitle">Kerkhoff Cilacap</string>
+    <string name="kerkhoffalt">South Cilacap</string>
+    <string name="kerkhoffdes"><![CDATA[<hr />
+<p> It is close to Pendem Fortress or Turtle Bay Beach. </p>
+<p> There are hundreds of graves belonging to Dutch citizens and foreigners from other countries known to be buried in the area currently used for Cilacap Christians. </p>
+<p> Some of them during their lifetime were important people such as Resident Assistants, architects of Fortress Pendem, Pirates, and others. </p>
+<p> From the research of Central Java Cultural Heritage Research Institute, found the oldest grave of Therese von Lutzow, a German citizen who died in 1852. </p>
+]]></string>
+
+    <string name="klentengtitle">The Temple Lam Tjeng Kiong</string>
+    <string name="klentengtitle2">Lam Tjeng Kiong</string>
+    <string name="klentengalt">Jl. RE. Martadinata No.4, Tambakreja</string>
+    <string name="klentengdes"><![CDATA[<hr />
+<p> The temple was founded in 1879. </p>
+<p> The name of this temple consists of three words, namely Lam means south, Tjeng means clean or holy, and Kiong means palace. </p>
+<p> Thus, Lam Tjeng Kiong means the Southern Palace that is Clean or Holy. As the name implies, this temple is facing southward. </p>
+<p> In this pagoda, there are about 200 gods believed by the people and each made a replica or a picture of a statue. There is also a Barongsai that is often used to enliven religious events. </p>
+]]></string>
+
+    <string name="teluktitle">Teluk Penyu</string>
+    <string name="telukalt">Jl. Pasir Emas</string>
+    <string name="telukdes"><![CDATA[<hr />
+<p> This beach is adjacent to Fort Pendem. </p>
+<p> The beach is sandy and overgrown with trees giving shade to the tourists. </p>
+<p> The panoramic beauty of this beautiful beach can be enjoyed by tourists, both at sunrise and at sunset. </p>
+<p> Along the coast, you can find a variety of typical Cilacap food, such as tempe mendoan and seafood specialties and souvenirs in the form of shell crafts for tourists who want to make it as souvenirs. </p>
+]]></string>
+
+    <string name="kalimpattitle">Kalimpat Beach</string>
+    <string name="kalimpatalt">Nusakambangan Island, Tambakreja</string>
+    <string name="kalimpatdes"><![CDATA[<hr />
+<p> This beach is located southeast of Nusakambangan Island. It is quite far from Benteng Lingkar and Benteng Karang Bolong. </p>
+<p> To get to the beach, tourists can use the services of guides who are in Benteng Lingkar area </p>
+<p> Tourists can only reach this beach on foot. Travel time to get to this beach from Benteng Lingkar approximately 1.5 hours. </p>
+]]></string>
+
+    <string name="pasirtitle">Pasir Putih Beach</string>
+    <string name="pasiralt">Nusakambangan Island, Tambakreja</string>
+    <string name="pasirdes"><![CDATA[<hr />
+<p> This beach is located on the northeast of Nusakambangan Island. </p>
+<P> This beach is usually used as a stopover for tourists who want to see the beach or other attractions on the island Nusakambangan. </p>
+<P> On this beach there are many traders who sell food and drink to meet the needs of tourists before or after exploring Nusakambangan Island. </p>
+]]></string>
+
+    <string name="srandiltitle">Srandil Mount</string>
+    <string name="srandilalt">Glempangpasir</string>
+    <string name="srandildes"><![CDATA[<hr />
+<p> One version of folklore about the first inhabitants of Mount Srandil is Sultan Mukhriti the second son of Dewi Sari Banon Ratu Sumenep, East Java. His coming was for an ascetic, but he disappeared, and there remained his petilasan which lies to the east, known as Embah Gusti Agung Sultan Mukhriti. </p>
+<p> Every day people visit for pilgrimage, because the place is not only known by the surrounding community, but until the exit of Java. </p>
+<p> The purpose of visiting Mount Srandil is various. Pilgrims usually visit or meditate on the Kliwon Friday Night or Tuesday Kliwon on the Moon Shura. </p>
+<p> The petilasan-petilasan in Mount Srandil among them are Nyai Dewi Tanjung Sekarsari, Legs Semar Tunggul Sabdojati Dayo Amongrogo, Juragan Dampo Awang, and Langlang Buwana which is on the hill. </p>
+]]></string>
+
+    <string name="seloktitle">Selok Mount</string>
+    <string name="selokalt">Karangbenda</string>
+    <string name="selokdes"><![CDATA[<hr />
+<p> Selok Mount is a towering hill area resembling a mountain and a homogeneous forest of mahogany plant. </p>
+<p> In this area there are several sanggar used for pilgrimage or worship, namely Jambe 5, Jambe, and Padepokan Sang Hyang Gunung Jati. </p>
+<p> Places are often visited for spiritual purposes, especially Padepokan Sang Hyang Gunung Jati. </p>
+<P> The mall is very crowded towards the month of Suro and the visitors who make the pilgrimage come from outside the region. </p>
+]]></string>
+
+    <string name="sodongtitle">Sodong Beach</string>
+    <string name="sodongalt">Karangbenda</string>
+    <string name="sodongdes"><![CDATA[<hr />
+<P> This beach is close to Selok Mountain. </p>
+<P> The charm of the beach is soothing to the eye when tourists can see the shrimp cypress trees are grown neatly so that the aesthetic aspect is very visible. </p>
+<P> When tourists look to the west, it will be seen that this beach breaks the strong waves and also the flow of the river that leads to the sea and the scenery of the charming Selok Mountain. </p>
+<P> Travelers can also see the sun set in the western horizon. </p>
+]]></string>
+
+    <string name="sudarmantitle">Soesilo Soedarman Museum</string>
+    <string name="sudarmanalt">Gentasari</string>
+    <string name="sudarmandes"><![CDATA[<hr />
+<p>A museum that stores objects from the former Minister of Tourism Post and Telecommunication Indonesia, Soesilo Soedarman.</p>
+<p>The museum keeps personal items (bedding, office clothes, and accolades ever received) to the war vehicle (armored vehicle) ever used.</p>
+<p>The museum is equipped with a library and reading room, swimming pool and childrens play facilities.</p>
+]]></string>
+
+    <string name="padangtitle">Padang Mount</string>
+    <string name="padangalt">Desa Salebu</string>
+    <string name="padangdes"><![CDATA[<hr />
+<p>Being in the middle of the forest is cool. To reach the location takes one hour with motorcycle access until the last village and continued walking distance &plusmn; 6 hours round trip to two different altitude locations.</p>
+<p>It consists of two locations referred to by the local community under the name "Pabahanan" (east) and "Tomb of the Hajar Sakti" (west).</p>
+<p>In Pabahanan found type of rock andesite shaped beams with almost uniform size.</p>
+<p>Meanwhile, in the Tomb of Hajar Sakti found two pieces of andesite-shaped rock and arranged perpendicular (vertical) resembling a pattern of gravestones.</p>
+<p>In Mount Padang, ordinary people pray in that place if they have a desire. Usually in the month of Suro, people from the West Java region such as Cirebon and surrounding areas are usually doing a meditation in the area.</p>
+<p>Regarding the beginning of the establishment of Site Pabahanan and Tomb of Hajar Sakti still need to be investigated further, because there is little information about it.</p>
+]]></string>
+
+    <string name="mariatitle">Maria Cave</string>
+    <string name="mariaalt">Desa Klaces</string>
+    <string name="mariades"><![CDATA[<hr />
+<p>This cave was accidentally discovered by the Dutch colonists around the 16th century and was once used as a place of worship of Christians at the time the Dutch occupied the island of Java.</p>
+<p>Has a hallway of approximately 150 meters with a width of 10 meters.</p>
+<p>Inside the cave there is a stalagmite that resembles a dog and a woman who is breastfeeding, because of its shape like the Virgin Mary, then some people call it the Cave of Mary.</p>
+<p>Inside there is also a ditch built by the Dutch to stem the water, then this cave is called as Cave Bendung.</p>
+]]></string>
+
+    <string name="masigittitle">Masigit Sela Cave</string>
+    <string name="masigitalt">Desa Klaces</string>
+    <string name="masigitdes"><![CDATA[<hr />
+<p>Meaning Masigit Sela is a mosque made of sidelines or stone.</p>
+<p>This cave is a large hole and far into the bowels of the earth because the natural process is too long to produce stalagmites and stalactites in the cave, so it looks very beautiful.</p>
+<p>If observed at a glance, this cave is like the entrance to the mosque building, therefore some people call Masigit Sela Cave as Sunan Kalijaga Cave of Worship and Sri Sultan Hamengkubuwana.</p>
+<p>Especially strengthened with a number of stairs in the mouth of the cave and a beduk. Inside the cave there is also a spring as a place to take ablution water.</p>
+<p>Tourists who visit this cave has a variety of purposes, ie there is a purpose to calm themselves, increase faith, ngalap blessing, and some are coming to send prayers to the ancestors.</p>
+<p>There is a stalagmite that forms a hollow like a crock called the penggawa pedaringan, and the stone wall separating the penggawa pedal is known as Aji Saka hermitage which is believed if it can embrace a pole, then its wish will come true.</p>
+]]></string>
+
+    <string name="ptpntitle">Perusahan Terbatas Perkebunan Negara IX</string>
+    <string name="ptpnalt">Central Cilacap</string>
+    <string name="ptpndes"><![CDATA[<hr />
+<p>Initially a Dutch-made, but then nationalized by the Indonesian government.</p>
+<p>PTPN IX itself was established on March 11, 1996 based on PP no. 14 of 1996 which is a fusion of PT Perkebunan XV, XVI, and XVIII.</p>
+<p>PTPN IX has two divisions, namely the Annual Plant Division (rubber, coffee, and tea) and the Annual Plant Division (Sugar Factory).</p>
+<p>Meanwhile, the cultivated plants in Cilacap are rubber. Currently also being developed cultivation of Jabon plants (Teak Bongsor).</p>
+<p>PTPN IX has an area of 700 hectares.</p>
+<p>After a visit from PTPN IX, visitors can see the beauty of rice fields located near PTPN IX. View Photos and Videos</p>
+]]></string>
+
+    <string name="watutitle">Watu Lingga</string>
+    <string name="watualt">Desa Pesanggrahan</string>
+    <string name="watudes">
+        <![CDATA[<hr />
+<p>One of the classical remains of hindu in kecugihan sub-district. Linga is the manifestation of the gods as the supreme god of Hinduism in Indonesia.</p>
+<p>The location where Watu Lingga is located is an area where he discovered Luit Copper Inscriptions. Until now there has been no information or reports related to it even though it has been done a lot of research by educational institutions or academics.</p>
+]]>
+    </string>
+
+    <string name="title_activity_tab_alun">Deskripsi</string>
+    <string name="title_activity_tab_baru">tab_baru</string>
+    <string name="title_activity_makam">Makam</string>
+
+
+    <string name="masjidtitle">The Great Mosque of Darussalam</string>
+    <string name="masjidtitle2">Darussalam</string>
+    <string name="masjidalt">Jl. Mataram 1, Sidanegara</string>
+    <string name="masjiddes"><![CDATA[<hr />
+<p>The Great Mosque of Darussalam Cilacap was built on 29 April 1776 by Kyai Kali Husen and Kyai Kali Ibrahim, both of them are descendants of Sunan Kalijaga.</p>
+<p>The first renovation was carried out by Muslims in Cilacap Regency in 1929, while the old grand mosque was moved and brought by the first penghulu to Kawunganten, after some time moved again to the village of Kalijeruk in 1969.</p>
+]]></string>
+
+
+    <string name="jambutitle">Site of Jambu Temple</string>
+    <string name="jambualt">Cilongkrang Village</string>
+    <string name="jambudes"><![CDATA[<hr />
+<p>This site is located on a hilltop at Mount Jambu Cilongkrang Village Wanareja District. On this site was found an ox statue (andini) and yoni.</p>
+<p>Local people are more familiar as petilasan panembahan boars.</p>
+<p>Yoni stone broke into 4 parts (front) and behind him an ox statue. The location of the statue is known as the petilasan Shaykh Abdul Qadir Jaelani.</p>
+]]></string>
+
+    <string name="sindertitle">Sinder House</string>
+    <string name="sinderalt">Cilongkrang Village</string>
+    <string name="sinderdes"><![CDATA[<hr />
+<p>This house is known by the people around with the name "Rumah Gedong", is expected to be inaugurated in 1926 in the rubber garden area Cilongkrang area.</p>
+]]></string>
+
+    <string name="sumolangutitle">The Tomb of Sumlangu</string>
+    <string name="sumolangualt">Selok Mount</string>
+    <string name="sumolangudes"><![CDATA[<hr />
+<p>Tomb of Kyai Sumolangu is located in the area of Mount Selok. This tomb is still covered with huts and around the newly built foundation around.</p>
+<p>It is said that Kyai Sumolangu came from Kebumen area and died in Selok. Kyai Somalangu is the name of Islamic figure Sheikh Mahfud Abdurrahman whose grave is found in Mount Selok and become a pilgrimage tourism object.</p>
+]]></string>
+
+
+    <string name="stakesugihantitle">Kesugihan Station</string>
+    <string name="stakesugihanalt">Menganti</string>
+    <string name="stakesugihandes"><![CDATA[<hr />
+<p>Kesugihan Station is a class III small train station located in Kesugihan, Kesugihan, Cilacap.</p>
+<p>The station located at an altitude of + 9 m is included in the Operation Area V Purwokerto.</p>
+<p>This station has three lines with line 2 as a straight line and already using electrical signaling system. No trains will stop at this station, unless there is a crossover or intercontinental fire.</p>
+]]></string>
+
+    <string name="stakarangtitle">Karangkandri Station</string>
+    <string name="stakarangalt">JL. Raya Kesugihan, Karangreja</string>
+    <string name="stakarangdes"><![CDATA[<hr />
+<p>The station located at an altitude of more than 8 meters is included in the Operation Area V Purwokerto.</p>
+<p>This station has only two lines with line 1 as a straight line. This station has a unique emplacement because it is covered by a smooth grass and green.</p>
+]]></string>
+
+    <string name="stakroyatitle">Kroya Station</string>
+    <string name="stakroyaalt">Segaralangu, Cipari</string>
+    <string name="stakroyades"><![CDATA[<hr />
+<p>Kroya Station (KYA) is a large B type train station located in Bajing, Kroya, Cilacap.</p>
+<p>The station located at an elevation of +11 meters is included in the Operation Area V Purwokerto.</p>
+<p>In the era of Dutch Government, this station is used as a place to merge Eendaagsche Express chain that serves Batavia-Soerabaja pp route with its feeder (KA feeder) coming from Bandung.</p>
+]]></string>
+
+    <string name="stamaostitle">Stasiun Maos</string>
+    <string name="stamaosalt">Maos</string>
+    <string name="stamaosdes"><![CDATA[<hr />
+<p>Maos Station is a class II train station located in Karangreja, Maos, Cilacap. The station located at an altitude of + 8 m is included in the Operation Area V Purwokerto.</p>
+<p>Maos Station is located hundreds of meters from the bridge across the Serayu River. In the past there was a rail line from this station to Purwokerto Timur Station (now no longer working), built by Serajoedal Stoomtram Maatschappij.</p>
+<p>The line was once used to transport sugar cane. It\'s no longer working.</p>
+]]></string>
+
+    <string name="stagumilirtitle">Gumilir Station</string>
+    <string name="stagumiliralt">Gumilir</string>
+    <string name="stagumilirdes"><![CDATA[<hr />
+<p>Gumilir Station (GM) is a class III / small train station located in Gumilir, Cilacap.</p>
+<p>The station located at an altitude of + 7 m is included in the Operation Area V Purwokerto. Approximately 1.5 km to the southwest, there is a railway crossing to Karangtalun Station located inside PT Holcim Indonesia Tbk cement plant.</p>
+<p>This station became the first station to use the signal system Computer Base Interlocking which is a program of three Ministries including Ministry of Transportation, State Ministry of Research and Technology, and Ministry of SOEs.</p>
+]]></string>
+
+    <string name="stajeruktitle">Jeruklegi Station</string>
+    <string name="stajerukalt">Jeruklegi Wetan</string>
+    <string name="stajerukdes"><![CDATA[<hr />
+<p>The Jeruklegi Station (JRL) is a class III / small train station located in Jeruklegi Wetan, Jeruklegi, Cilacap.</p>
+<p>Stations located at an altitude of more than 10 m are included in the Operation Area V Purwokerto.</p>
+<p>This station has three lines with line 1 as a straight line. This station is to the west of the highway connecting Cilacap-Wangon.</p>
+]]></string>
+
+    <string name="stakawutitle">Kawunganten Station</string>
+    <string name="stakawualt">Kawunganten Lor</string>
+    <string name="stakawudes"><![CDATA[<hr />
+<p>Kawunganten Station (KWG) is a class III / small train station located in Kawunganten Lor, Kawunganten, Cilacap.<br />The station located at a height of + 11 m is included in the Operation Area V Purwokerto. This station has three lines with line 2 as a straight line.</p>
+]]></string>
+
+    <string name="stagandrungtitle">Gandrungmangun Station</string>
+    <string name="stagandrungalt">Gandrungmanis</string>
+    <string name="stagandrungdes"><![CDATA[<hr />
+<p>Gandrungmangun Station (GDM), or better known by the local community as Gandrungmangu Station is a class III / small train station located in Gandrungmanis, Gandrungmangu, Cilacap, precisely near Gandrungmangu Market.</p>
+<p>The station located at a height of 15 m is included in the Operation Area V Purwokerto. This station has three lines with line 2 as a straight line.</p>
+]]></string>
+
+    <string name="stasidarejatitle">Sidareja Station</string>
+    <string name="stasidarejaalt">Sidamulya</string>
+    <string name="stasidarejades"><![CDATA[<hr />
+<p>Sidareja Station (SDR) is a class II train station located in Sidamulya, Sidareja, Cilacap.</p>
+<p>Stations located at a height of 5 m is included in the Operation Area V Purwokerto. This station is quite crowded because every day to serve an average of hundreds of rail passengers who stop here.</p>
+<p>This station has four lines with line 2 as a straight line.</p>
+]]></string>
+
+    <string name="staciparititle">Cipari Station</string>
+    <string name="staciparialt">Jl. Cipari, Mulyadadi</string>
+    <string name="staciparides"><![CDATA[<hr />
+<p>Cipari Station (CPI) is a class III / small train station located in Cipari, Cipari, Cilacap.</p>
+<p>Stations located at an altitude of 11 m is included in the Operation Area V Purwokerto. The station is 100 meters west of the market and in front of it is an angkot stop.</p>
+<p>This station has only two lines with line 2 as a straight line. The station also has unique Dutch heritage objects such as a safe, water tower, and ticket stamp.</p>
+<p>To the west of this station there is a former Cilongkrang Stop that has been inactive since 2003.</p>
+]]></string>
+
+    <string name="staciltitle">Cilacap Station</string>
+    <string name="stacilalt">South Cilacap</string>
+    <string name="stacildes"><![CDATA[<hr />
+<p>Cilacap city is seen by the colonial government as an important port city in Java. As a transit city, accommodating commodities from some surrounding areas (Banyumas, Kedu, to Yogyakarta), in Cilacap was built complete station with railway line.</p>
+<p>The construction of Cilacap station is done gradually, handled by Staatspoorwegen (SS) railway company. The architecture of the first Cilacap Station in the Empires neo-classical style was like the other SS stations of the day. The main entrance and hall with high ceilings are right in the middle of the center, flanked by waiting rooms and other rooms on either side and right. The platform is shaded by a roof with Polonceau horses from iron.</p>
+<p>On 4 March 1942 Cilacap was bombed by Japanese Navy aircraft. At the harbor there was a big fire and five ships were drowned. A new train arriving at Cilacap Station from Cirebon was also bombed, resulting in more than 150 people dead, while the Cilacap Station building was severely damaged.</p>
+<p>In 1943 the ruined station building was rebuilt by Rikuyu Sokyoku, the body responsible for land transportation during the Japanese occupation. The design of the building was made by Ir. Thomas Nix (1904-1998), architect and city planner of Bandung.</p>
+<p>Prior to the arrival of Japan in Indonesia, in 1938 Nix had designed the BPM-Shell building in Jakarta and Semarang which is now Pertamina\'s office. The Nix design for the Nileuwe Bouwen-style Cilacap Station. The building is entirely using reinforced concrete construction.</p>
+]]></string>
+    <string name="tips_not_wifi">You are currently using the mobile network, the player will continue to consume traffic</string>
+    <string name="tips_not_wifi_cancel">Stop Play</string>
+    <string name="tips_not_wifi_confirm">Resume</string>
+
+</resources>

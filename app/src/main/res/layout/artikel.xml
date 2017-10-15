@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/artikel"
+    android:background="#ffffff">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/header">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:scaleType="centerCrop"
+            android:id="@+id/cover"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="170dp"
+            android:background="@color/colorPrimaryDark">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="50sp"
+                android:paddingBottom="5dp"
+                android:paddingTop="10dp"
+                android:id="@+id/judul"
+                android:textColor="@color/font"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10sp"
+                android:layout_marginLeft="10sp"
+                android:paddingBottom="5dp"
+                android:id="@+id/alamat"
+                android:layout_below="@+id/judul"
+                android:textColor="@color/font"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:paddingBottom="10dp"
+                android:layout_below="@+id/alamat"
+                android:id="@+id/desa"
+                android:textColor="@color/font"
+                android:textStyle="italic"/>
+        </RelativeLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/arah"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            app:layout_anchor="@id/cover"
+            app:layout_anchorGravity="bottom|right|end"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/arah"
+            android:layout_marginRight="10dp"
+            app:elevation="0dp"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/galeri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|left"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/photo"
+            app:layout_anchor="@+id/cover"
+            app:layout_anchorGravity="top|right"
+            app:elevation="0dp"/>
+    </android.support.design.widget.CoordinatorLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:id="@+id/scrollView"
+        android:scrollbars="vertical"
+        android:layout_marginBottom="50dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/isiartikel"/>
+    </ScrollView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/kembali"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:background="@color/colorAccent"
+        android:foreground="?attr/selectableItemBackground"
+        android:text="@string/back"
+        android:onClick="kembali"
+        android:clickable="true"
+        android:textColor="@color/font"/>
+
+</RelativeLayout>

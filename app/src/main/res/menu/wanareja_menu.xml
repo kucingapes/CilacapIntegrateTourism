@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_back"
+            android:title="@string/back" />
+    </group>
+    <item android:title="@string/wanareja">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_jambu"
+                    android:title="@string/jambu"
+                    android:icon="@drawable/ic_prasasti" />
+
+                <item
+                    android:id="@+id/nav_sinder"
+                    android:title="@string/sindertitle"
+                    android:icon="@drawable/ic_ptpn" />
+            </group>
+        </menu>
+    </item>
+
+</menu>

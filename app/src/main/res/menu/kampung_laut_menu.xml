@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_back"
+            android:title="@string/back" />
+    </group>
+    <item android:title="@string/kampunglaut">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_maria"
+                    android:icon="@drawable/ic_cave"
+                    android:title="@string/mariatitle" />
+                <item
+                    android:id="@+id/nav_masigit"
+                    android:icon="@drawable/ic_cave"
+                    android:title="@string/masigittitle" />
+            </group>
+        </menu>
+    </item>
+
+</menu>

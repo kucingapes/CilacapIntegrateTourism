@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    android:padding="20dp"
+    android:id="@+id/about_page">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/uhamka"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:alpha="0.5"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textStyle="bold"
+        android:id="@+id/judul"
+        android:textSize="20dp"
+        android:paddingBottom="5dp"
+        android:textColor="@color/font"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name_des"
+        android:layout_below="@+id/judul"
+        android:id="@+id/des"
+        android:textStyle="italic"
+        android:paddingBottom="10dp"
+        android:textColor="@color/font"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\u00A9 2017"
+        android:textColor="@color/font"
+        android:layout_below="@+id/des"
+        android:id="@+id/copy"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/prodi"
+        android:layout_below="@+id/copy"
+        android:id="@+id/prodi"
+        android:textColor="@color/font"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/kampus"
+        android:layout_below="@id/prodi"
+        android:id="@+id/kampus"
+        android:textColor="@color/font"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kampus"
+        android:text="@string/web"
+        android:textColor="@color/link"
+        android:id="@+id/web"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/versi"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/font"/>
+
+</RelativeLayout>

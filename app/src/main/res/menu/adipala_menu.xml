@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_back"
+            android:title="@string/back" />
+    </group>
+    <item android:title="Adipala">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_srandil"
+                    android:icon="@drawable/ic_gunung"
+                    android:title="@string/srandiltitle" />
+                <item
+                    android:id="@+id/nav_selok"
+                    android:icon="@drawable/ic_gunung"
+                    android:title="@string/seloktitle" />
+                <item
+                    android:id="@+id/nav_sodong"
+                    android:icon="@drawable/ic_pantai"
+                    android:title="@string/sodongtitle" />
+
+                <item
+                    android:id="@+id/nav_sumolangu"
+                    android:icon="@drawable/ic_makam"
+                    android:title="@string/sumolangutitle" />
+            </group>
+        </menu>
+    </item>
+
+</menu>
