@@ -20,8 +20,8 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/viewkosong"
             android:layout_marginTop="50dp"
-            android:background="@color/colorPrimary"
-            android:onClick="bottomsheetclick">
+            android:background="#ffffff"
+            android:onClick="relatifbg">
 
             <TextView
                 android:id="@+id/judulsheet"
@@ -32,7 +32,8 @@
                 android:paddingBottom="5dp"
                 android:paddingTop="10dp"
                 android:textColor="@color/font"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:text="dasgsdgss"/>
 
             <TextView
                 android:id="@+id/alamatsheet"
@@ -42,7 +43,8 @@
                 android:layout_marginLeft="10sp"
                 android:layout_marginRight="10sp"
                 android:paddingBottom="5dp"
-                android:textColor="@color/font" />
+                android:textColor="@color/font"
+                android:text="dfgsdg"/>
 
             <TextView
                 android:id="@+id/desasheet"
@@ -53,7 +55,8 @@
                 android:textStyle="italic"
                 android:layout_marginRight="10sp"
                 android:paddingBottom="10dp"
-                android:textColor="@color/font" />
+                android:textColor="@color/font"
+                android:text="sdfgdhdfh"/>
         </RelativeLayout>
 
         <android.support.design.widget.FloatingActionButton
@@ -81,7 +84,7 @@
         android:foreground="?attr/selectableItemBackground"
         android:clickable="true"
         android:onClick="artikel_expand"
-        android:text="@string/expand"
-        android:textColor="@color/font"/>
+        android:textColor="@color/fontputih"
+        android:text="@string/readmore"/>
 
 </RelativeLayout>

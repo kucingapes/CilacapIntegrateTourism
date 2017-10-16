@@ -2,7 +2,9 @@
 <resources>
     <color name="colorPrimary">#5465ff</color>
     <color name="colorPrimaryDark">#5465ff</color>
-    <color name="colorAccent">#a9b61e</color>
-    <color name="link">#e4f904</color>
-    <color name="font">#e0ececec</color>
+    <color name="colorAccent">#c73037</color>
+    <color name="link">#c73037</color>
+    <color name="font">#e0404040</color>
+    <color name="fontputih">#e0ececec</color>
+    <color name="fontbox">#d837382d</color>
 </resources>

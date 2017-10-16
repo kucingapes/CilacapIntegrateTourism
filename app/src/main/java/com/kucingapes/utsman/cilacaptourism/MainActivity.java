@@ -46,6 +46,7 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MapStyleOptions;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.kelin.translucentbar.library.TranslucentBarManager;
 
 import java.util.ArrayList;
 
@@ -194,6 +195,10 @@ public class MainActivity extends LocalizationActivity
     private ArrayList<String> stringArrayList;
     private ListViewAdapter adapter;
 
+    public void relatifbg(View view) {
+        return;
+    }
+
 
     private class InfoWindowAdapter implements GoogleMap.InfoWindowAdapter {
 
@@ -230,6 +235,10 @@ public class MainActivity extends LocalizationActivity
         setSupportActionBar(toolbar);
         bindView();
         hide_awalan();
+
+        TranslucentBarManager translucentBarManager = new TranslucentBarManager(this);
+        //translucentBarManager.translucent(this);
+        translucentBarManager.transparent(this);
 
         listView = (ListView) findViewById(R.id.list_item);
         listView.setVisibility(View.GONE);
@@ -346,14 +355,13 @@ public class MainActivity extends LocalizationActivity
         stringArrayList.add(getString(R.string.staciltitle));
     }
 
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.search_menu, menu);
         MenuItem myActionMenuItem = menu.findItem(R.id.action_search);
         final SearchView searchView = (SearchView) myActionMenuItem.getActionView();
-        //searchView.setMaxWidth(Integer.MAX_VALUE);
+        searchView.setMaxWidth(Integer.MAX_VALUE);
         //Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -828,8 +836,6 @@ public class MainActivity extends LocalizationActivity
         artikel.setVisibility(View.VISIBLE);
         getSupportActionBar().hide();
         bottomsheet_layout.setVisibility(View.GONE);
-
-
     }
 
     public void kembali(View view) {
@@ -1361,9 +1367,7 @@ public class MainActivity extends LocalizationActivity
 
     }
 
-    public void bottomsheetclick(View view) {
 
-    }
 
     //<editor-fold desc="METHOD-OBJEK">
     private void navbenteng() {
