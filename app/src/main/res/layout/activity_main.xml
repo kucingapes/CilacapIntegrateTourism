@@ -45,8 +45,6 @@
 
     <include layout="@layout/artikel"/>
 
-    <include layout="@layout/about_page" />
-
     <com.celerysoft.imagepager.ImagePager
         android:id="@+id/main_image_pager"
         android:layout_width="match_parent"

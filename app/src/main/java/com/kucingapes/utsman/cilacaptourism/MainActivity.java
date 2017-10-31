@@ -5,6 +5,8 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.design.widget.AppBarLayout;
+import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -49,6 +51,8 @@ import com.google.android.gms.maps.model.MarkerOptions;
 import com.kelin.translucentbar.library.TranslucentBarManager;
 
 import java.util.ArrayList;
+
+import static com.kucingapes.utsman.cilacaptourism.R.string.bentengtitle;
 
 public class MainActivity extends LocalizationActivity
         implements NavigationView.OnNavigationItemSelectedListener, OnMapReadyCallback {
@@ -168,7 +172,6 @@ public class MainActivity extends LocalizationActivity
     private Button button_expand;
     private RelativeLayout bottomsheet_layout;
     private RelativeLayout artikel;
-    private RelativeLayout about;
     private TextView judul;
     private TextView alamat;
     private TextView desa;
@@ -177,14 +180,17 @@ public class MainActivity extends LocalizationActivity
     private TextView desaartikel;
     private TextView isiartikel;
     private ImageView image_cover;
-    private TextView web;
+    //private TextView web;
     private FloatingActionButton arah;
     private FloatingActionButton galeri;
     private FloatingActionButton arahsheet;
+    private AppBarLayout appbar;
+    private CollapsingToolbarLayout collapsingToolbarLayout;
 
     private GoogleMap mMap;
     private Handler handler = new Handler();
 
+    private Toolbar toolbar_artikel;
 
     private String currentLanguage = LanguageSetting.getDefaultLanguage();
 
@@ -266,7 +272,6 @@ public class MainActivity extends LocalizationActivity
         //bottomsheet_layout.setVisibility(View.GONE);
         //button_colapse.setVisibility(View.GONE);
         artikel.setVisibility(View.GONE);
-        about.setVisibility(View.GONE);
     }
 
     private void bindView() {
@@ -286,8 +291,10 @@ public class MainActivity extends LocalizationActivity
         arahsheet = (FloatingActionButton) findViewById(R.id.arahsheet);
         galeri = (FloatingActionButton) findViewById(R.id.galeri);
         imagePager = (ImagePager) findViewById(R.id.main_image_pager);
-        web = (TextView) findViewById(R.id.web);
-        about = (RelativeLayout) findViewById(R.id.about_page);
+        //about = (RelativeLayout) findViewById(R.id.about_page);
+        toolbar_artikel = (Toolbar) findViewById(R.id.toolbar_artikel);
+        appbar = (AppBarLayout) findViewById(R.id.app_bar_layout_artikel);
+        collapsingToolbarLayout = (CollapsingToolbarLayout) findViewById(R.id.colap);
     }
 
     @Override
@@ -309,9 +316,6 @@ public class MainActivity extends LocalizationActivity
         } else if (imagePager.getVisibility() == View.VISIBLE) {
             imagePager.setVisibility(View.GONE);
             artikel.setVisibility(View.VISIBLE);
-        } else if (about.getVisibility() == View.VISIBLE){
-            about.startAnimation(slideDown);
-            about.setVisibility(View.GONE);
         } else {
             super.onBackPressed();
         }
@@ -319,7 +323,7 @@ public class MainActivity extends LocalizationActivity
 
     private void setData() {
         stringArrayList = new ArrayList<>();
-        stringArrayList.add(getString(R.string.bentengtitle));
+        stringArrayList.add(getString(bentengtitle));
         stringArrayList.add(getString(R.string.benlingtitle));
         stringArrayList.add(getString(R.string.benkartitle));
         stringArrayList.add(getString(R.string.lapastitle2));
@@ -402,7 +406,7 @@ public class MainActivity extends LocalizationActivity
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                if (parent.getItemAtPosition(position).equals(getString(R.string.bentengtitle))) {
+                if (parent.getItemAtPosition(position).equals(getString(bentengtitle))) {
                     NavigationViewMethod();
                     navbenteng();
                 } else if (parent.getItemAtPosition(position).equals(getString(R.string.benlingtitle))){
@@ -536,17 +540,8 @@ public class MainActivity extends LocalizationActivity
             delayDrawerSelatan();
 
         } else if (id == R.id.nav_about){
-            Animation bottomUp = AnimationUtils.loadAnimation(this, R.anim.slide_up_bottom);
-            about.startAnimation(bottomUp);
-            about.setVisibility(View.VISIBLE);
-            web.setText(Html.fromHtml(getString(R.string.web)));
-            web.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    Intent browser= new Intent(Intent.ACTION_VIEW, Uri.parse("http://uhamka.ac.id"));
-                    startActivity(browser);
-                }
-            });
+            Intent i = new Intent(this, About.class);
+            startActivity(i);
         }
 
         else if (id == R.id.nav_adipala) {
@@ -834,7 +829,7 @@ public class MainActivity extends LocalizationActivity
         Animation bottomUp = AnimationUtils.loadAnimation(MainActivity.this, R.anim.slide_up_bottom);
         artikel.startAnimation(bottomUp);
         artikel.setVisibility(View.VISIBLE);
-        getSupportActionBar().hide();
+        //getSupportActionBar().hide();
         bottomsheet_layout.setVisibility(View.GONE);
     }
 
@@ -846,6 +841,7 @@ public class MainActivity extends LocalizationActivity
         bottomsheet_layout.startAnimation(bottomUp);
         getSupportActionBar().show();
         bottomsheet_layout.setVisibility(View.VISIBLE);
+        appbar.setExpanded(true, true);
     }
 
     public void noimage() {
@@ -1021,7 +1017,7 @@ public class MainActivity extends LocalizationActivity
 
         mbenteng = mMap.addMarker(new MarkerOptions()
                 .position(benteng)
-                .title(getString(R.string.bentengtitle))
+                .title(getString(bentengtitle))
                 .snippet(getString(R.string.bentengalt))
                 //.icon(BitmapDescriptorFactory.fromResource(R.drawable.mar_ben)));
                 .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
@@ -1371,6 +1367,8 @@ public class MainActivity extends LocalizationActivity
 
     //<editor-fold desc="METHOD-OBJEK">
     private void navbenteng() {
+
+
         CameraPosition cameraPosition = new CameraPosition.Builder()
                 .target(benteng)
                 .zoom(15)
@@ -1379,10 +1377,10 @@ public class MainActivity extends LocalizationActivity
         mMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
         mbenteng.showInfoWindow();
         image_cover.setImageResource(R.drawable.benteng1);
-        judul.setText(getString(R.string.bentengtitle));
+        judul.setText(getString(bentengtitle));
         alamat.setText(getString(R.string.bentengalt));
         desa.setText(getText(R.string.cilacap_selatan));
-        judulartikel.setText(getString(R.string.bentengtitle));
+        judulartikel.setText(getString(bentengtitle));
         alamatartikel.setText(getString(R.string.bentengalt));
         desaartikel.setText(getString(R.string.cilacap_selatan));
         isiartikel.setText(Html.fromHtml(getString(R.string.bentengdes)));
@@ -1414,6 +1412,12 @@ public class MainActivity extends LocalizationActivity
                 gallerybenteng();
             }
         });
+
+        //toolbar_artikel.setTitle(getString(R.string.bentengtitle));
+        //this.setTitle(getString(R.string.bentengtitle));
+        //toolbar_artikel.setTitleTextColor(android.graphics.Color.WHITE);
+
+        collapsingToolbarLayout.setTitle(getString(R.string.bentengtitle));
 
     }
 
@@ -1461,6 +1465,8 @@ public class MainActivity extends LocalizationActivity
                 gallerybenling();
             }
         });
+        //collapsingToolbarLayout.setTitleEnabled(false);
+        collapsingToolbarLayout.setTitle(getString(R.string.benlingtitle));
 
     }
 
@@ -1508,6 +1514,7 @@ public class MainActivity extends LocalizationActivity
                 gallerylapas();
             }
         });
+        collapsingToolbarLayout.setTitle(getString(R.string.lapastitle2));
 
     }
 
@@ -1525,6 +1532,7 @@ public class MainActivity extends LocalizationActivity
         desa.setText(getText(R.string.cilacap_selatan));
         judulartikel.setText(getString(R.string.benkartitle));
         alamatartikel.setText(getString(R.string.benkaralt));
+        toolbar_artikel.setTitle(getString(R.string.benkartitle));
         desaartikel.setText(getString(R.string.cilacap_selatan));
         isiartikel.setText(Html.fromHtml(getString(R.string.benkardes)));
         arah.setOnClickListener(new View.OnClickListener() {
@@ -1554,6 +1562,7 @@ public class MainActivity extends LocalizationActivity
                 gallerybenkar();
             }
         });
+        collapsingToolbarLayout.setTitle(getString(R.string.benkartitle));
 
     }
 
@@ -1601,6 +1610,8 @@ public class MainActivity extends LocalizationActivity
             }
         });
 
+        collapsingToolbarLayout.setTitle(getString(R.string.klentengtitle));
+
     }
 
     private void navteluk() {
@@ -1644,6 +1655,7 @@ public class MainActivity extends LocalizationActivity
             }
         });
 
+        collapsingToolbarLayout.setTitle(getString(R.string.teluktitle));
     }
 
     private void navkalimpat() {
@@ -1686,6 +1698,8 @@ public class MainActivity extends LocalizationActivity
                 noimage();
             }
         });
+
+        collapsingToolbarLayout.setTitle(getString(R.string.kalimpattitle));
     }
 
     private void navpasir() {
@@ -1732,6 +1746,8 @@ public class MainActivity extends LocalizationActivity
             }
         });
 
+        collapsingToolbarLayout.setTitle(getString(R.string.pasirtitle));
+
     }
 
     private void navalun() {
@@ -1745,10 +1761,10 @@ public class MainActivity extends LocalizationActivity
         image_cover.setImageResource(R.drawable.alun1);
         judul.setText(getString(R.string.aluntitle));
         alamat.setText(getString(R.string.alunalt));
-        desa.setText(getText(R.string.cilacap_selatan));
+        desa.setText(getText(R.string.cilacap_tengah));
         judulartikel.setText(getString(R.string.aluntitle));
         alamatartikel.setText(getString(R.string.alunalt));
-        desaartikel.setText(getString(R.string.cilacap_selatan));
+        desaartikel.setText(getString(R.string.cilacap_tengah));
         isiartikel.setText(Html.fromHtml(getString(R.string.alundes)));
         arah.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -1777,6 +1793,7 @@ public class MainActivity extends LocalizationActivity
                 galleryalun();
             }
         });
+        collapsingToolbarLayout.setTitle(getString(R.string.aluntitle));
 
     }
 
@@ -1824,6 +1841,8 @@ public class MainActivity extends LocalizationActivity
             }
         });
 
+        collapsingToolbarLayout.setTitle(getString(R.string.kerkhofftitle));
+
     }
 
     private void navptpn() {
@@ -1837,10 +1856,10 @@ public class MainActivity extends LocalizationActivity
         image_cover.setImageResource(R.drawable.ptpn1);
         judul.setText(getString(R.string.ptpntitle));
         alamat.setText(getString(R.string.ptpnalt));
-        desa.setText(getText(R.string.cilacap_selatan));
+        desa.setText(getText(R.string.cilacap_tengah));
         judulartikel.setText(getString(R.string.ptpntitle));
         alamatartikel.setText(getString(R.string.ptpnalt));
-        desaartikel.setText(getString(R.string.cilacap_selatan));
+        desaartikel.setText(getString(R.string.cilacap_tengah));
         isiartikel.setText(Html.fromHtml(getString(R.string.ptpndes)));
         arah.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -1870,6 +1889,8 @@ public class MainActivity extends LocalizationActivity
             }
         });
 
+        collapsingToolbarLayout.setTitle(getString(R.string.ptpntitle));
+
     }
 
     private void navmasjid() {
@@ -1883,10 +1904,10 @@ public class MainActivity extends LocalizationActivity
         image_cover.setImageResource(R.drawable.masjid1);
         judul.setText(getString(R.string.masjidtitle));
         alamat.setText(getString(R.string.masjidalt));
-        desa.setText(getText(R.string.cilacap_selatan));
+        desa.setText(getText(R.string.cilacap_tengah));
         judulartikel.setText(getString(R.string.masjidtitle));
         alamatartikel.setText(getString(R.string.masjidalt));
-        desaartikel.setText(getString(R.string.cilacap_selatan));
+        desaartikel.setText(getString(R.string.cilacap_tengah));
         isiartikel.setText(Html.fromHtml(getString(R.string.masjiddes)));
         arah.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -1915,6 +1936,7 @@ public class MainActivity extends LocalizationActivity
                 gallerymasjid();
             }
         });
+        collapsingToolbarLayout.setTitle(getString(R.string.masjidtitle));
 
     }
 
@@ -1929,10 +1951,10 @@ public class MainActivity extends LocalizationActivity
         image_cover.setImageResource(R.drawable.srandil1);
         judul.setText(getString(R.string.srandiltitle));
         alamat.setText(getString(R.string.srandilalt));
-        desa.setText(getText(R.string.cilacap_selatan));
+        desa.setText(getText(R.string.adipala));
         judulartikel.setText(getString(R.string.srandiltitle));
         alamatartikel.setText(getString(R.string.srandilalt));
-        desaartikel.setText(getString(R.string.cilacap_selatan));
+        desaartikel.setText(getString(R.string.adipala));
         isiartikel.setText(Html.fromHtml(getString(R.string.srandildes)));
         arah.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -1962,6 +1984,8 @@ public class MainActivity extends LocalizationActivity
             }
         });
 
+        collapsingToolbarLayout.setTitle(getString(R.string.srandiltitle));
+
     }
 
     private void navselok() {
@@ -1975,10 +1999,10 @@ public class MainActivity extends LocalizationActivity
         image_cover.setImageResource(R.drawable.selok1);
         judul.setText(getString(R.string.seloktitle));
         alamat.setText(getString(R.string.selokalt));
-        desa.setText(getText(R.string.cilacap_selatan));
+        desa.setText(getText(R.string.adipala));
         judulartikel.setText(getString(R.string.seloktitle));
         alamatartikel.setText(getString(R.string.selokalt));
-        desaartikel.setText(getString(R.string.cilacap_selatan));
+        desaartikel.setText(getString(R.string.adipala));
         isiartikel.setText(Html.fromHtml(getString(R.string.selokdes)));
         arah.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -2008,6 +2032,8 @@ public class MainActivity extends LocalizationActivity
             }
         });
 
+        collapsingToolbarLayout.setTitle(getString(R.string.seloktitle));
+
     }
 
     private void navsodong() {
@@ -2021,10 +2047,10 @@ public class MainActivity extends LocalizationActivity
         image_cover.setImageResource(R.drawable.sodong1);
         judul.setText(getString(R.string.sodongtitle));
         alamat.setText(getString(R.string.sodongalt));
-        desa.setText(getText(R.string.cilacap_selatan));
+        desa.setText(getText(R.string.adipala));
         judulartikel.setText(getString(R.string.sodongtitle));
         alamatartikel.setText(getString(R.string.sodongalt));
-        desaartikel.setText(getString(R.string.cilacap_selatan));
+        desaartikel.setText(getString(R.string.adipala));
         isiartikel.setText(Html.fromHtml(getString(R.string.sodongdes)));
         arah.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -2054,6 +2080,8 @@ public class MainActivity extends LocalizationActivity
             }
         });
 
+        collapsingToolbarLayout.setTitle(getString(R.string.sodongtitle));
+
     }
 
     private void navsumolangu() {
@@ -2067,10 +2095,10 @@ public class MainActivity extends LocalizationActivity
         image_cover.setImageResource(R.drawable.noimg_tumb);
         judul.setText(getString(R.string.sumolangutitle));
         alamat.setText(getString(R.string.sumolangualt));
-        desa.setText(getText(R.string.cilacap_selatan));
+        desa.setText(getText(R.string.adipala));
         judulartikel.setText(getString(R.string.sumolangutitle));
         alamatartikel.setText(getString(R.string.sumolangualt));
-        desaartikel.setText(getString(R.string.cilacap_selatan));
+        desaartikel.setText(getString(R.string.adipala));
         isiartikel.setText(Html.fromHtml(getString(R.string.sumolangudes)));
         arah.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -2097,6 +2125,8 @@ public class MainActivity extends LocalizationActivity
             }
         });
 
+        collapsingToolbarLayout.setTitle(getString(R.string.sumolangutitle));
+
     }
 
     private void navsudarman() {
@@ -2110,10 +2140,10 @@ public class MainActivity extends LocalizationActivity
         image_cover.setImageResource(R.drawable.sudarman1);
         judul.setText(getString(R.string.sudarmantitle));
         alamat.setText(getString(R.string.sudarmanalt));
-        desa.setText(getText(R.string.cilacap_selatan));
+        desa.setText(getText(R.string.kroya));
         judulartikel.setText(getString(R.string.sudarmantitle));
         alamatartikel.setText(getString(R.string.sudarmanalt));
-        desaartikel.setText(getString(R.string.cilacap_selatan));
+        desaartikel.setText(getString(R.string.kroya));
         isiartikel.setText(Html.fromHtml(getString(R.string.sudarmandes)));
         arah.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -2143,6 +2173,8 @@ public class MainActivity extends LocalizationActivity
             }
         });
 
+        collapsingToolbarLayout.setTitle(getString(R.string.sudarmantitle));
+
     }
 
     private void navpadang() {
@@ -2156,10 +2188,10 @@ public class MainActivity extends LocalizationActivity
         image_cover.setImageResource(R.drawable.padang1);
         judul.setText(getString(R.string.padangtitle));
         alamat.setText(getString(R.string.padangalt));
-        desa.setText(getText(R.string.cilacap_selatan));
+        desa.setText(getText(R.string.majenang));
         judulartikel.setText(getString(R.string.padangtitle));
         alamatartikel.setText(getString(R.string.padangalt));
-        desaartikel.setText(getString(R.string.cilacap_selatan));
+        desaartikel.setText(getString(R.string.majenang));
         isiartikel.setText(Html.fromHtml(getString(R.string.padangdes)));
         arah.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -2189,6 +2221,8 @@ public class MainActivity extends LocalizationActivity
             }
         });
 
+        collapsingToolbarLayout.setTitle(getString(R.string.padangtitle));
+
     }
 
     private void navmaria() {
@@ -2202,10 +2236,10 @@ public class MainActivity extends LocalizationActivity
         image_cover.setImageResource(R.drawable.maria1);
         judul.setText(getString(R.string.mariatitle));
         alamat.setText(getString(R.string.mariaalt));
-        desa.setText(getText(R.string.cilacap_selatan));
+        desa.setText(getText(R.string.kampunglaut));
         judulartikel.setText(getString(R.string.mariatitle));
         alamatartikel.setText(getString(R.string.mariaalt));
-        desaartikel.setText(getString(R.string.cilacap_selatan));
+        desaartikel.setText(getString(R.string.kampunglaut));
         isiartikel.setText(Html.fromHtml(getString(R.string.mariades)));
         arah.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -2235,6 +2269,8 @@ public class MainActivity extends LocalizationActivity
             }
         });
 
+        collapsingToolbarLayout.setTitle(getString(R.string.mariatitle));
+
     }
 
     private void navmasigit() {
@@ -2248,10 +2284,10 @@ public class MainActivity extends LocalizationActivity
         image_cover.setImageResource(R.drawable.masigit1);
         judul.setText(getString(R.string.masigittitle));
         alamat.setText(getString(R.string.masigitalt));
-        desa.setText(getText(R.string.cilacap_selatan));
+        desa.setText(getText(R.string.kampunglaut));
         judulartikel.setText(getString(R.string.masigittitle));
         alamatartikel.setText(getString(R.string.masigitalt));
-        desaartikel.setText(getString(R.string.cilacap_selatan));
+        desaartikel.setText(getString(R.string.kampunglaut));
         isiartikel.setText(Html.fromHtml(getString(R.string.masigitdes)));
         arah.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -2281,6 +2317,8 @@ public class MainActivity extends LocalizationActivity
             }
         });
 
+        collapsingToolbarLayout.setTitle(getString(R.string.masigittitle));
+
     }
 
     private void navwatu() {
@@ -2294,10 +2332,10 @@ public class MainActivity extends LocalizationActivity
         image_cover.setImageResource(R.drawable.noimg_tumb);
         judul.setText(getString(R.string.watutitle));
         alamat.setText(getString(R.string.watualt));
-        desa.setText(getText(R.string.cilacap_selatan));
+        desa.setText(getText(R.string.kesugihan));
         judulartikel.setText(getString(R.string.watutitle));
         alamatartikel.setText(getString(R.string.watualt));
-        desaartikel.setText(getString(R.string.cilacap_selatan));
+        desaartikel.setText(getString(R.string.kesugihan));
         isiartikel.setText(Html.fromHtml(getString(R.string.watudes)));
         arah.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -2324,6 +2362,8 @@ public class MainActivity extends LocalizationActivity
             }
         });
 
+        collapsingToolbarLayout.setTitle(getString(R.string.watutitle));
+
     }
 
     private void navjambu() {
@@ -2337,10 +2377,10 @@ public class MainActivity extends LocalizationActivity
         image_cover.setImageResource(R.drawable.jambu1);
         judul.setText(getString(R.string.jambutitle));
         alamat.setText(getString(R.string.jambualt));
-        desa.setText(getText(R.string.cilacap_selatan));
+        desa.setText(getText(R.string.wanareja));
         judulartikel.setText(getString(R.string.jambutitle));
         alamatartikel.setText(getString(R.string.jambualt));
-        desaartikel.setText(getString(R.string.cilacap_selatan));
+        desaartikel.setText(getString(R.string.wanareja));
         isiartikel.setText(Html.fromHtml(getString(R.string.jambudes)));
         arah.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -2370,6 +2410,8 @@ public class MainActivity extends LocalizationActivity
             }
         });
 
+        collapsingToolbarLayout.setTitle(getString(R.string.jambutitle));
+
     }
 
     private void navsinder() {
@@ -2383,10 +2425,10 @@ public class MainActivity extends LocalizationActivity
         image_cover.setImageResource(R.drawable.noimg_tumb);
         judul.setText(getString(R.string.sindertitle));
         alamat.setText(getString(R.string.sinderalt));
-        desa.setText(getText(R.string.cilacap_selatan));
+        desa.setText(getText(R.string.wanareja));
         judulartikel.setText(getString(R.string.sindertitle));
         alamatartikel.setText(getString(R.string.sinderalt));
-        desaartikel.setText(getString(R.string.cilacap_selatan));
+        desaartikel.setText(getString(R.string.wanareja));
         isiartikel.setText(Html.fromHtml(getString(R.string.sinderdes)));
         arah.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -2412,6 +2454,8 @@ public class MainActivity extends LocalizationActivity
                 noimage();
             }
         });
+
+        collapsingToolbarLayout.setTitle(getString(R.string.sindertitle));
 
     }
 
@@ -2459,6 +2503,8 @@ public class MainActivity extends LocalizationActivity
             }
         });
 
+        collapsingToolbarLayout.setTitle(getString(R.string.staciltitle));
+
     }
 
     private void navstakesugihan() {
@@ -2472,10 +2518,10 @@ public class MainActivity extends LocalizationActivity
         image_cover.setImageResource(R.drawable.stakesugihan1);
         judul.setText(getString(R.string.stakesugihantitle));
         alamat.setText(getString(R.string.stakesugihanalt));
-        desa.setText(getText(R.string.cilacap_selatan));
+        desa.setText(getText(R.string.kesugihan));
         judulartikel.setText(getString(R.string.stakesugihantitle));
         alamatartikel.setText(getString(R.string.stakesugihanalt));
-        desaartikel.setText(getString(R.string.cilacap_selatan));
+        desaartikel.setText(getString(R.string.kesugihan));
         isiartikel.setText(Html.fromHtml(getString(R.string.stakesugihandes)));
         arah.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -2504,6 +2550,7 @@ public class MainActivity extends LocalizationActivity
                 gallerystakesugihan();
             }
         });
+        collapsingToolbarLayout.setTitle(getString(R.string.stakesugihantitle));
 
     }
 
@@ -2518,10 +2565,10 @@ public class MainActivity extends LocalizationActivity
         image_cover.setImageResource(R.drawable.stakarang1);
         judul.setText(getString(R.string.stakarangtitle));
         alamat.setText(getString(R.string.stakarangalt));
-        desa.setText(getText(R.string.cilacap_selatan));
+        desa.setText(getText(R.string.kesugihan));
         judulartikel.setText(getString(R.string.stakarangtitle));
         alamatartikel.setText(getString(R.string.stakarangalt));
-        desaartikel.setText(getString(R.string.cilacap_selatan));
+        desaartikel.setText(getString(R.string.kesugihan));
         isiartikel.setText(Html.fromHtml(getString(R.string.stakarangdes)));
         arah.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -2551,6 +2598,8 @@ public class MainActivity extends LocalizationActivity
             }
         });
 
+        collapsingToolbarLayout.setTitle(getString(R.string.stakarangtitle));
+
     }
 
     private void navstakroya() {
@@ -2564,10 +2613,10 @@ public class MainActivity extends LocalizationActivity
         image_cover.setImageResource(R.drawable.stakroya1);
         judul.setText(getString(R.string.stakroyatitle));
         alamat.setText(getString(R.string.stakroyaalt));
-        desa.setText(getText(R.string.cilacap_selatan));
+        desa.setText(getText(R.string.kroya));
         judulartikel.setText(getString(R.string.stakroyatitle));
         alamatartikel.setText(getString(R.string.stakroyaalt));
-        desaartikel.setText(getString(R.string.cilacap_selatan));
+        desaartikel.setText(getString(R.string.kroya));
         isiartikel.setText(Html.fromHtml(getString(R.string.stakroyades)));
         arah.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -2597,6 +2646,8 @@ public class MainActivity extends LocalizationActivity
             }
         });
 
+        collapsingToolbarLayout.setTitle(getString(R.string.stakroyatitle));
+
     }
 
     private void navstamaos() {
@@ -2610,10 +2661,10 @@ public class MainActivity extends LocalizationActivity
         image_cover.setImageResource(R.drawable.stamaos1);
         judul.setText(getString(R.string.stamaostitle));
         alamat.setText(getString(R.string.stamaosalt));
-        desa.setText(getText(R.string.cilacap_selatan));
+        desa.setText(getText(R.string.maos));
         judulartikel.setText(getString(R.string.stamaostitle));
         alamatartikel.setText(getString(R.string.stamaosalt));
-        desaartikel.setText(getString(R.string.cilacap_selatan));
+        desaartikel.setText(getString(R.string.maos));
         isiartikel.setText(Html.fromHtml(getString(R.string.stamaosdes)));
         arah.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -2643,6 +2694,8 @@ public class MainActivity extends LocalizationActivity
             }
         });
 
+        collapsingToolbarLayout.setTitle(getString(R.string.stamaostitle));
+
     }
 
     private void navstagumilir() {
@@ -2656,10 +2709,10 @@ public class MainActivity extends LocalizationActivity
         image_cover.setImageResource(R.drawable.stagumilir1);
         judul.setText(getString(R.string.stagumilirtitle));
         alamat.setText(getString(R.string.stagumiliralt));
-        desa.setText(getText(R.string.cilacap_selatan));
+        desa.setText(getText(R.string.gumilir));
         judulartikel.setText(getString(R.string.stagumilirtitle));
         alamatartikel.setText(getString(R.string.stagumiliralt));
-        desaartikel.setText(getString(R.string.cilacap_selatan));
+        desaartikel.setText(getString(R.string.gumilir));
         isiartikel.setText(Html.fromHtml(getString(R.string.stagumilirdes)));
         arah.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -2688,7 +2741,7 @@ public class MainActivity extends LocalizationActivity
                 gallerystagumilir();
             }
         });
-
+        collapsingToolbarLayout.setTitle(getString(R.string.stagumilirtitle));
     }
 
     private void navstajeruk() {
@@ -2702,10 +2755,10 @@ public class MainActivity extends LocalizationActivity
         image_cover.setImageResource(R.drawable.stajeruk1);
         judul.setText(getString(R.string.stajeruktitle));
         alamat.setText(getString(R.string.stajerukalt));
-        desa.setText(getText(R.string.cilacap_selatan));
+        desa.setText(getText(R.string.jeruk));
         judulartikel.setText(getString(R.string.stajeruktitle));
         alamatartikel.setText(getString(R.string.stajerukalt));
-        desaartikel.setText(getString(R.string.cilacap_selatan));
+        desaartikel.setText(getString(R.string.jeruk));
         isiartikel.setText(Html.fromHtml(getString(R.string.stajerukdes)));
         arah.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -2734,6 +2787,7 @@ public class MainActivity extends LocalizationActivity
                 gallerystajeruk();
             }
         });
+        collapsingToolbarLayout.setTitle(getString(R.string.stajeruktitle));
 
     }
 
@@ -2748,10 +2802,10 @@ public class MainActivity extends LocalizationActivity
         image_cover.setImageResource(R.drawable.stakawu1);
         judul.setText(getString(R.string.stakawutitle));
         alamat.setText(getString(R.string.stakawualt));
-        desa.setText(getText(R.string.cilacap_selatan));
+        desa.setText(getText(R.string.kawu));
         judulartikel.setText(getString(R.string.stakawutitle));
         alamatartikel.setText(getString(R.string.stakawualt));
-        desaartikel.setText(getString(R.string.cilacap_selatan));
+        desaartikel.setText(getString(R.string.kawu));
         isiartikel.setText(Html.fromHtml(getString(R.string.stakawudes)));
         arah.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -2780,6 +2834,7 @@ public class MainActivity extends LocalizationActivity
                 gallerystakawu();
             }
         });
+        collapsingToolbarLayout.setTitle(getString(R.string.stakawutitle));
 
     }
 
@@ -2794,10 +2849,10 @@ public class MainActivity extends LocalizationActivity
         image_cover.setImageResource(R.drawable.stagandrung1);
         judul.setText(getString(R.string.stagandrungtitle));
         alamat.setText(getString(R.string.stagandrungalt));
-        desa.setText(getText(R.string.cilacap_selatan));
+        desa.setText(getText(R.string.gandrung));
         judulartikel.setText(getString(R.string.stagandrungtitle));
         alamatartikel.setText(getString(R.string.stagandrungalt));
-        desaartikel.setText(getString(R.string.cilacap_selatan));
+        desaartikel.setText(getString(R.string.gandrung));
         isiartikel.setText(Html.fromHtml(getString(R.string.stagandrungdes)));
         arah.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -2826,6 +2881,7 @@ public class MainActivity extends LocalizationActivity
                 gallerystagandrung();
             }
         });
+        collapsingToolbarLayout.setTitle(getString(R.string.stagandrungtitle));
 
     }
 
@@ -2840,10 +2896,10 @@ public class MainActivity extends LocalizationActivity
         image_cover.setImageResource(R.drawable.stasidareja1);
         judul.setText(getString(R.string.stasidarejatitle));
         alamat.setText(getString(R.string.stasidarejaalt));
-        desa.setText(getText(R.string.cilacap_selatan));
+        desa.setText(getText(R.string.sidareja));
         judulartikel.setText(getString(R.string.stasidarejatitle));
         alamatartikel.setText(getString(R.string.stasidarejaalt));
-        desaartikel.setText(getString(R.string.cilacap_selatan));
+        desaartikel.setText(getString(R.string.sidareja));
         isiartikel.setText(Html.fromHtml(getString(R.string.stasidarejades)));
         arah.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -2872,6 +2928,7 @@ public class MainActivity extends LocalizationActivity
                 gallerystasidareja();
             }
         });
+        collapsingToolbarLayout.setTitle(getString(R.string.stasidarejatitle));
 
     }
 
@@ -2886,10 +2943,10 @@ public class MainActivity extends LocalizationActivity
         image_cover.setImageResource(R.drawable.stacipari1);
         judul.setText(getString(R.string.staciparititle));
         alamat.setText(getString(R.string.staciparialt));
-        desa.setText(getText(R.string.cilacap_selatan));
+        desa.setText(getText(R.string.cipari));
         judulartikel.setText(getString(R.string.staciparititle));
         alamatartikel.setText(getString(R.string.staciparialt));
-        desaartikel.setText(getString(R.string.cilacap_selatan));
+        desaartikel.setText(getString(R.string.cipari));
         isiartikel.setText(Html.fromHtml(getString(R.string.staciparides)));
         arah.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -2918,6 +2975,7 @@ public class MainActivity extends LocalizationActivity
                 gallerystacipari();
             }
         });
+        collapsingToolbarLayout.setTitle(getString(R.string.staciparititle));
 
     }
 

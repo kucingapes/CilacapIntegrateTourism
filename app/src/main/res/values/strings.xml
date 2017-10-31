@@ -13,6 +13,9 @@
     <string name="back">Back</string>
     <string name="expand">Read More</string>
 
+    <string name="lokasi">Location</string>
+    <string name="deskripsi">Description</string>
+
     <string name="next">Read more</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>

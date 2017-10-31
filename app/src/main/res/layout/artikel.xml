@@ -1,138 +1,178 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/artikel"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:animateLayoutChanges="true"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/artikel"
-    android:background="#ffffff"
-    android:fitsSystemWindows="true">
+    tools:context="com.kucingapes.utsman.cilacaptourism.MainActivity">
 
     <android.support.design.widget.CoordinatorLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/header">
+        android:layout_height="match_parent">
 
-        <android.support.v7.widget.CardView
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/app_bar_layout_artikel"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/frameimg"
-            app:cardElevation="4dp"
-            app:cardCornerRadius="0dp">
-            <ImageView
+            android:layout_height="270dp"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            android:fitsSystemWindows="true">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/colap"
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:scaleType="centerCrop"
-                android:id="@+id/cover" />
-        </android.support.v7.widget.CardView>
+                android:layout_height="match_parent"
+                app:contentScrim="?attr/colorPrimary"
+                app:expandedTitleTextAppearance="@style/CollapsedAppBar"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                app:titleEnabled="true">
+
+                <ImageView
+                    android:id="@+id/cover"
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    android:scaleType="centerCrop"
+                    app:layout_collapseMode="parallax"
+                    app:layout_collapseParallaxMultiplier="0.5" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_gravity="bottom"
+                    android:background="@color/colorPrimary" />
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar_artikel"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_marginTop="24dp"
+                    app:layout_collapseMode="pin"
+                    app:titleTextAppearance="@style/CollapsedAppBar"/>
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <!--<include layout="@layout/content_main" /> -->
 
 
-
-        <RelativeLayout
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/nested"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/canvasheader"
-            android:layout_marginTop="200dp">
+            android:layout_height="match_parent"
+            android:background="#d9d9d9"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textStyle="bold"
-                android:layout_marginLeft="10sp"
-                android:layout_marginRight="50sp"
-                android:layout_marginBottom="7dp"
-                android:layout_marginTop="10dp"
-                android:id="@+id/judul"
-                android:text="@string/aluntitle"
-                android:textColor="@color/font" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="10sp"
-                android:layout_marginLeft="10sp"
-                android:id="@+id/alamat"
-                android:text="altsfsg"
-                android:layout_below="@+id/judul"
-                android:textColor="@color/font"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10sp"
-                android:layout_marginRight="10sp"
-                android:layout_below="@+id/alamat"
-                android:id="@+id/desa"
-                android:text="fdbs"
-                android:textColor="@color/font"
-                android:textStyle="italic"/>
-
-            <View
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="@color/colorAccent"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_below="@id/desa"
-                android:layout_marginTop="10dp"/>
+                android:layout_height="match_parent">
 
-        </RelativeLayout>
+                <android.support.v7.widget.CardView
+                    android:id="@+id/containeratas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/alamat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="10dp"
+                            android:drawablePadding="5dp"
+                            android:drawableLeft="@drawable/ic_pin_drop_grey_800_24dp"
+                            android:drawableStart="@drawable/ic_pin_drop_grey_800_24dp" />
+
+                        <TextView
+                            android:id="@+id/desa"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/alamat"
+                            android:drawableLeft="@drawable/distrik"
+                            android:drawableStart="@drawable/distrik"
+                            android:drawablePadding="5dp"/>
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/containeratas"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="15dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/isiartikel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:layout_marginBottom="10dp"/>
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </RelativeLayout>
+        </android.support.v4.widget.NestedScrollView>
 
         <android.support.design.widget.FloatingActionButton
             android:id="@+id/arah"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignTop="@+id/judul"
-            android:layout_gravity="center_vertical|left"
-            android:layout_marginRight="15dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="@color/colorAccent"
             android:src="@drawable/arah"
-            app:layout_anchor="@+id/frameimg"
-            app:layout_anchorGravity="bottom|right" />
+            app:layout_anchor="@id/app_bar_layout_artikel"
+            app:layout_anchorGravity="bottom|right|end"
+            tools:targetApi="lollipop"
+            app:borderWidth="0dp"
+            app:elevation="6dp"/>
 
         <android.support.design.widget.FloatingActionButton
             android:id="@+id/galeri"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentTop="true"
-            android:layout_gravity="bottom|left"
-            android:layout_marginRight="15dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginEnd="90dp"
+            android:layout_marginRight="90dp"
+            android:backgroundTint="@color/colorAccent"
             android:src="@drawable/photo"
-            app:layout_anchor="@+id/frameimg"
-            app:layout_anchorGravity="center_vertical|right" />
+            app:layout_anchor="@id/app_bar_layout_artikel"
+            app:layout_anchorGravity="bottom|right|end"
+            tools:targetApi="lollipop"
+            app:borderWidth="0dp"
+            app:elevation="6dp"/>
+
 
     </android.support.design.widget.CoordinatorLayout>
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/header"
-        android:id="@+id/scrollView"
-        android:scrollbars="vertical"
-        android:layout_marginBottom="50dp"
-        android:paddingTop="10dp">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="15dp"
-            android:layout_marginLeft="15dp"
-            android:id="@+id/isiartikel"/>
-    </ScrollView>
-
     <Button
+        android:id="@+id/kembali"
+        style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_alignParentBottom="true"
-        android:id="@+id/kembali"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:background="@color/colorAccent"
-        android:foreground="?attr/selectableItemBackground"
-        android:text="@string/back"
-        android:onClick="kembali"
+        android:background="@color/colorPrimary"
         android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:onClick="kembali"
+        android:text="@string/back"
         android:textColor="@color/fontputih"/>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/judul"
+        android:visibility="gone"/>
 
 </RelativeLayout>

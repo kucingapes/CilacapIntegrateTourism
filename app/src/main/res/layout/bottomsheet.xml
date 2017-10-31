@@ -29,11 +29,13 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10sp"
                 android:layout_marginRight="50sp"
-                android:paddingBottom="5dp"
+                android:paddingBottom="10dp"
                 android:paddingTop="10dp"
                 android:textColor="@color/font"
                 android:textStyle="bold"
-                android:text="dasgsdgss"/>
+                android:text="dasgsdgss"
+                android:layout_marginStart="10sp"
+                android:layout_marginEnd="50sp" />
 
             <TextView
                 android:id="@+id/alamatsheet"
@@ -44,7 +46,9 @@
                 android:layout_marginRight="10sp"
                 android:paddingBottom="5dp"
                 android:textColor="@color/font"
-                android:text="dfgsdg"/>
+                android:text="dfgsdg"
+                android:drawablePadding="5dp"
+                android:drawableLeft="@drawable/ic_pin_drop_grey_800_24dp"/>
 
             <TextView
                 android:id="@+id/desasheet"
@@ -56,7 +60,9 @@
                 android:layout_marginRight="10sp"
                 android:paddingBottom="10dp"
                 android:textColor="@color/font"
-                android:text="sdfgdhdfh"/>
+                android:text="sdfgdhdfh"
+                android:drawableLeft="@drawable/distrik"
+                android:drawablePadding="5dp"/>
         </RelativeLayout>
 
         <android.support.design.widget.FloatingActionButton
@@ -69,7 +75,8 @@
             android:src="@drawable/arah"
             app:layout_anchor="@id/viewkosong"
             app:layout_anchorGravity="bottom|right|end"
-            app:elevation="0dp"/>
+            app:elevation="0dp"
+            android:focusable="true" />
 
     </android.support.design.widget.CoordinatorLayout>
 
@@ -80,7 +87,7 @@
         android:layout_height="50dp"
         android:layout_below="@+id/bottomsheet"
         style="@style/Widget.AppCompat.Button.Borderless"
-        android:background="@color/colorAccent"
+        android:background="@color/colorPrimary"
         android:foreground="?attr/selectableItemBackground"
         android:clickable="true"
         android:onClick="artikel_expand"

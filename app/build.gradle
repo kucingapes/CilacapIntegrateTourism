@@ -10,7 +10,7 @@ android {
         }
     }
     compileSdkVersion 26
-    buildToolsVersion "26.0.1"
+    buildToolsVersion '26.0.2'
     defaultConfig {
         applicationId "com.kucingapes.utsman.cilacaptourism"
         minSdkVersion 16
@@ -56,4 +56,6 @@ dependencies {
     //compile 'com.dingmouren.paletteimageview:paletteimageview:1.0.7'
     compile 'com.android.support:cardview-v7:26.0.0-alpha1'
 }
+
+
 

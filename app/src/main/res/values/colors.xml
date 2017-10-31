@@ -2,8 +2,8 @@
 <resources>
     <color name="colorPrimary">#5465ff</color>
     <color name="colorPrimaryDark">#5465ff</color>
-    <color name="colorAccent">#c73037</color>
-    <color name="link">#c73037</color>
+    <color name="colorAccent">#0011a7</color>
+    <color name="link">#0011a7</color>
     <color name="font">#e0404040</color>
     <color name="fontputih">#e0ececec</color>
     <color name="fontbox">#d837382d</color>

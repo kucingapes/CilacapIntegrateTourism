@@ -15,6 +15,10 @@
 
     <string name="next">Selanjutnya</string>
 
+    <string name="lokasi">Lokasi</string>
+    <string name="deskripsi">Deskripsi</string>
+
+
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
@@ -213,7 +217,7 @@
 <p>PTPN IX memiliki dua Divisi, yakni Divisi Tanaman Tahunan (karet, kopi, dan teh) dan Divisi Tanaman Semusim (Pabrik Gula).</p>
 <p>Sedangkan, tanaman yang dibudidayakan di Cilacap adalah karet. Saat ini juga sedang dikembangkan budidaya tanaman Jabon (Jati Bongsor).</p>
 <p>PTPN IX memiliki luas kurang lebih 700 hektar.</p>
-<p>Setelah berkunjung dari PTPN IX, pengunjung bisa melihat keindahan persawahan yang berada di dekat PTPN IX. Lihat Foto dan Video</p>
+<p>Setelah berkunjung dari PTPN IX, pengunjung bisa melihat keindahan persawahan yang berada di dekat PTPN IX.</p>
 ]]></string>
 
     <string name="watutitle">Watu Lingga</string>
