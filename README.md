@@ -1,8 +1,7 @@
 
 # Cilacap Integrated Tourism
 
-![Alt text](/2.png)
-![Alt text](/3.png)
+![Alt text](/Untitled-3.png)
 
                 
 ----
